@@ -15,26 +15,33 @@ public class Util {
 	public static void decompileTargetApk(String targetApkName){
 		try {
 			//Runtime.getRuntime().exec("cmd.exe /k start "+System.getProperty("user.dir")+"/exebat.bat");
-			Runtime.getRuntime().exec("cmd.exe /k start apktool.bat d "+targetApkName);
+			Process pro=Runtime.getRuntime().exec("cmd.exe /c  apktool.bat d "+targetApkName);
+			pro.waitFor();
+			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
 	}
 	
 	public static void decompileStandarApk(){
 		/********************************************/
 	}
 	
+	/*
+	 * apk文件必須放在本项目的根目录下，否则找不到
+	 * */
 	public static String getApkName(){
 
 		String apkName="";
 		File f=new File(System.getProperty("user.dir"));
 		File[] childFiles=f.listFiles();
 		for(int i=0;i<childFiles.length;i++){
-			if(childFiles[i].getName().contains(".apk")&&childFiles[i].isFile()){
+			if(childFiles[i].getName().endsWith(".apk")&&childFiles[i].isFile()){
 				apkName=childFiles[i].getName();
-				//System.out.println(childFiles[i].getAbsolutePath());
 				break;
 			}
 		}
@@ -52,13 +59,13 @@ public class Util {
 	public static String getTargetApkDecompilePath(){
 		String result="";
 		String apkName=Util.getApkName();
-		result="/"+apkName.substring(0, apkName.length()-4)+"/";
+		result=apkName.substring(0, apkName.lastIndexOf(".apk"))+"/";
 		return result;		
 	}
 	
 	public static File getTargetApkFile(){
 		String apkName=Util.getApkName();
-		return new File(apkName.substring(0, apkName.length()-4));
+		return new File(apkName.substring(0,  apkName.lastIndexOf(".apk")));
 		
 	}
 	
@@ -70,14 +77,7 @@ public class Util {
 	
 	public static void decompileTargetApk(){
 		String apkName=Util.getApkName();
-		//System.out.println(apkName);
 		Util.decompileTargetApk(apkName);
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 	}
 	
 	/** 

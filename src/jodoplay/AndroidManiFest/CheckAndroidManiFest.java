@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import jodoplay.global.GlobalValues;
 import jodoplay.util.Util;
 
 import org.dom4j.Attribute;
@@ -51,6 +52,9 @@ public class CheckAndroidManiFest {
 	
 	public static void compare(ArrayList<Element> targetNodes,ArrayList<Element> standarNodes,ArrayList<Element> resultNodes){
 		for(Element e:standarNodes){
+			if(e.getName().equals("application")){
+				GlobalValues.setApplication(e);
+			}
 			if(existInNodesList(targetNodes,e)==false){
 				resultNodes.add(e);
 			}

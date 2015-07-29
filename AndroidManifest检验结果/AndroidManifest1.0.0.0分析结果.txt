@@ -1,0 +1,20 @@
+缺少以下结点
+
+结点名uses-permission
+属性名name	属性值android.permission.ACCESS_FINE_LOCATION
+
+结点名activity
+属性名name	属性值com.jodo.shares.MainLaunchActivity
+属性名label	属性值@string/app_name
+
+结点名activity
+属性名name	属性值com.jodo.paysdk.demo.MainActivity
+属性名label	属性值@string/app_name
+属性名configChanges	属性值screenSize|orientation
+属性名theme	属性值@android:style/Theme.Black.NoTitleBar
+
+结点名activity
+属性名name	属性值com.jodo.paysdk.demo.SelectorActivity
+属性名label	属性值@string/app_name
+属性名theme	属性值@android:style/Theme.Black.NoTitleBar
+
