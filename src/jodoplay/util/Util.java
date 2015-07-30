@@ -29,6 +29,18 @@ public class Util {
 	
 	public static void decompileStandarApk(){
 		/********************************************/
+		try {
+			//Runtime.getRuntime().exec("cmd.exe /k start "+System.getProperty("user.dir")+"/exebat.bat");
+			Process pro=Runtime.getRuntime().exec("cmd.exe start /k  apktool.bat d targetapk/sdk-debug.apk targetapk");
+			pro.waitFor();
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
 	}
 	
 	/*

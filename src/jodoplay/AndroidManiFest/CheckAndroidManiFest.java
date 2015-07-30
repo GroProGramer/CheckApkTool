@@ -43,7 +43,8 @@ public class CheckAndroidManiFest {
 		
 	}
 	public static void check(){
-		String standarFilePath="standard/"+version+"/AndroidManifest"+".xml";
+		//String standarFilePath="standard/"+version+"/AndroidManifest"+".xml";
+		String standarFilePath=GlobalValues.getStanManifestXmlPath();
 		beginSetNodes(targetNodes,targetFilePath);
 		beginSetNodes(standarNodes,standarFilePath);
 		compare(targetNodes,standarNodes,resultNodes);

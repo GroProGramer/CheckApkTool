@@ -35,11 +35,11 @@ public class CheckMD5AndCRC {
    }
    
    
-   public  void checkAFile(MyFile targetFile,ArrayList<MyFile> referTable){
+   public  void checkAFile(MyFile targetFile,ArrayList<MyFile> targetTable){
 	   MyFile referFile=null;
-	   referFile=getReferFile(targetFile,referTable);
+	   referFile=getReferFile(targetFile,targetTable);
 	   if(referFile==null){
-		   targetFile.setFileStatus(MyFile.FileStatus.NotExistInStandarApk);
+		   targetFile.setFileStatus(MyFile.FileStatus.NotExistInCPApk);
 		   problemFiles.add(targetFile);
 	   }
 	   else{
@@ -67,8 +67,10 @@ public class CheckMD5AndCRC {
 		e.printStackTrace();
 	}
 	   
-	   for(MyFile targetFile:targetTable){
-		   checkAFile(targetFile,referTable);
+	   /*
+	    * 检测标准文件是否在目标文件里存在* */
+	   for(MyFile targetFile:referTable){
+		   checkAFile(targetFile,targetTable);
 	   }
 	   outPutCheckCodeLog("MD5与CRC码校验结果");
    }

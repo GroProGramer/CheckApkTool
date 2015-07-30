@@ -11,7 +11,7 @@ public class MyFile {
 	private File souceFile;
 	private String filePath;
 	public enum FileStatus{
-		NotExistInStandarApk,Safe,UnSafe
+		NotExistInCPApk,Safe,UnSafe
 	}
 	public String getFileName() {
 		return fileName;
