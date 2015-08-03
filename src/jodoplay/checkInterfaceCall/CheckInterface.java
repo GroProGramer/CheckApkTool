@@ -8,6 +8,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
+import jodoplay.checkToolManager.CheckToolManager;
 import jodoplay.global.GlobalValues;
 import jodoplay.util.Util;
 
@@ -17,17 +18,14 @@ import org.dom4j.Element;
 public class CheckInterface {
 
 	public static StringBuilder checkInterfaceResult=new StringBuilder();
-	public static StringBuilder checkSupportV4Result=new StringBuilder();
-	public static boolean isCPUseSupportV4=false;
+	//public static StringBuilder checkSupportV4Result=new StringBuilder();
+	
 	public static String[] forceCallInterfaceTable={
 		"onCreate","onResume","onPause","onStart","onStop","onDestroy","onBackPressed",
 		"onActivityResult","onRoleLoaded","setScreenPortrait","appInit","initSDK","showPayView",
-		"showLoginView","showChangeAccountView","showQuitGameView"
+		"showLoginView","showQuitGameView"
 	};
 	
-	public static String[] supportV4Table={
-		"support/v4/app"
-	};
 	
 	public static HashMap<String,Integer> stanInterfaceTable=new HashMap<String,Integer>();
 	
@@ -45,10 +43,8 @@ public class CheckInterface {
 	}
 	
 	public static void checkAFile(File f){
-		if(f.getAbsolutePath().contains("com\\jodo")==false&&f.getAbsolutePath().contains("com\\nostra13")==false&&f.getAbsolutePath().contains("com\\facebook")==false){
-			setCheckInterfaceResult(f);
-		}
-		setCheckSupportPckResult(f);
+		setCheckInterfaceResult(f);		
+		//setCheckSupportPckResult(f);
 	}
 	
 	public static void check(File rootFile){
@@ -59,53 +55,22 @@ public class CheckInterface {
 				checkFiles(f);
 			}
 		}
+		showInterfaceCallTimes();
 	}
 	
 	public static void outPutLog(){
 		showInterfaceCallTimes();
-		setCpUseSupportV4Result();
+		//setCpUseSupportV4Result();
 		Util.outPutLog("checkInterface", "checkInterface.txt", checkInterfaceResult.toString());
 	}
 	
-	public static void setCpUseSupportV4Result(){
-		if(isCPUseSupportV4){
-			checkInterfaceResult.append("CP使用了supportV4包\r\n");
-		}
-		else checkInterfaceResult.append("CP并未使用supportV4包\r\n");
-	}
-	public static String checkCodeUseSupportV4(String code){
-		String result=null;		
-			if(code.contains("support/v4/app")){
-				isCPUseSupportV4=true;
-				result=code.substring(code.indexOf("support/v4/app"), code.lastIndexOf(";"));
-			}		
-		return result;
-		
-	}
 	
-	public static void setCheckSupportPckResult(File f){
-		if(f.getAbsolutePath().contains("com\\jodo")||f.getAbsolutePath().contains("com\\nostra13")||f.getAbsolutePath().contains("com\\facebook"))
-			return;
-		 BufferedReader reader = null;
-	        try {
-	            reader = new BufferedReader(new FileReader(f));
-	            String tempString = null;
-	            while ((tempString = reader.readLine()) != null) {
-	            	String s=checkCodeUseSupportV4(tempString);
-	                if(s!=null){
-	                	checkSupportV4Result.append("使用supportV4包組件：").append(s).append("\r\n")
-	                	.append("所在文件为：").append(f.getAbsolutePath()).append("\r\n");
-	                }	                
-	            }	                  
-	            reader.close();
-	        } catch (IOException e) {
-	            e.printStackTrace();
-	        } 
-	}
 	
 	
 	
 	public static void setCheckInterfaceResult(File f) {
+		if(f.getAbsolutePath().contains("com\\jodo")||f.getAbsolutePath().contains("com\\nostra13")||f.getAbsolutePath().contains("com\\facebook"))
+				return;
         BufferedReader reader = null;
         boolean useJodoInterface=false;
         try {
@@ -122,12 +87,14 @@ public class CheckInterface {
                 	stanInterfaceTable.put(methodname,callTimes);
                 	}
                 	else stanInterfaceTable.put(methodname,1);
-                	checkInterfaceResult.append(s+"\r\n");
+                	//checkInterfaceResult.append(s+"\r\n");
+                	CheckToolManager.checkInterfaceResultAppend(s+"\r\n");
                 }
                 
             }
             if(useJodoInterface){
-            	checkInterfaceResult.append(f.getAbsolutePath()+"\r\n\r\n");
+            	//checkInterfaceResult.append(f.getAbsolutePath()+"\r\n\r\n");
+            	CheckToolManager.checkInterfaceResultAppend(f.getAbsolutePath()+"\r\n\r\n");
             }           
             reader.close();
         } catch (IOException e) {
@@ -146,15 +113,18 @@ public class CheckInterface {
         	else stanInterfaceTable.put("appInit",1);
         }
         Iterator iter = stanInterfaceTable.entrySet().iterator();
-        checkInterfaceResult.append("各方法调用次数如下:\r\n");
+        //checkInterfaceResult.append("各方法调用次数如下:\r\n");
+        CheckToolManager.checkInterfaceResultAppend("各方法调用次数如下:\r\n");
         while(iter.hasNext()){
         	Map.Entry<String, Integer> entry=(Map.Entry<String, Integer>)iter.next();
-        	checkInterfaceResult.append(entry.getKey()).append(":").append(entry.getValue()).append("\r\n\r\n");        	
+        	//checkInterfaceResult.append(entry.getKey()).append(":").append(entry.getValue()).append("\r\n\r\n"); 
+        	CheckToolManager.checkInterfaceResultAppend(entry.getKey()+":"+entry.getValue()+"\r\n\r\n");
         }
         
         for(int i=0;i<forceCallInterfaceTable.length;i++){
         	if(stanInterfaceTable.get(forceCallInterfaceTable[i])==null){
-        		checkInterfaceResult.append("存在必须被CP调用的方法但CP没有调用：").append(forceCallInterfaceTable[i]).append("\r\n");
+        		//checkInterfaceResult.append("存在必须被CP调用的方法但CP没有调用：").append(forceCallInterfaceTable[i]).append("\r\n");
+        		CheckToolManager.checkInterfaceResultAppend("存在必须被CP调用的方法但CP没有调用："+forceCallInterfaceTable[i]+"\r\n");
         	}
         }
 	}
@@ -162,7 +132,7 @@ public class CheckInterface {
 	public static void doCheckInterface(){
 		File f=Util.getTargetApkFile();
 		check(f);
-		outPutLog();
+		//outPutLog();
 	}
 		
 }

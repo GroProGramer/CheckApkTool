@@ -30,7 +30,7 @@ public class CheckAndroidManiFest {
 	private CheckAndroidManiFest(){
 		
 	}
-	public  static CheckAndroidManiFest getInstance(String targetAndroidManiFestFilepath,String version){
+	public  static CheckAndroidManiFest getInstance(String targetAndroidManiFestFilepath){
 		CheckAndroidManiFest.targetFilePath=targetAndroidManiFestFilepath;
 		System.out.println(targetAndroidManiFestFilepath);
 		
@@ -42,16 +42,16 @@ public class CheckAndroidManiFest {
 		return cam;
 		
 	}
-	public static void check(){
+	public  void check(){
 		//String standarFilePath="standard/"+version+"/AndroidManifest"+".xml";
 		String standarFilePath=GlobalValues.getStanManifestXmlPath();
 		beginSetNodes(targetNodes,targetFilePath);
 		beginSetNodes(standarNodes,standarFilePath);
 		compare(targetNodes,standarNodes,resultNodes);
-		CheckAndroidManiFest.outPutLog("./AndroidManifest检验结果");	
+		outPutLog("./AndroidManifest检验结果");	
 	}
 	
-	public static void compare(ArrayList<Element> targetNodes,ArrayList<Element> standarNodes,ArrayList<Element> resultNodes){
+	public  void compare(ArrayList<Element> targetNodes,ArrayList<Element> standarNodes,ArrayList<Element> resultNodes){
 		for(Element e:standarNodes){
 			if(e.getName().equals("application")){
 				GlobalValues.setApplication(e);
@@ -62,7 +62,7 @@ public class CheckAndroidManiFest {
 		}
 	}
 	
-	public static boolean existInNodesList(ArrayList<Element> nodes,Element e){
+	public  boolean existInNodesList(ArrayList<Element> nodes,Element e){
 		boolean result=false;
 		for(Element te:nodes){
 			if(twoNodeAreEqual(te,e)) result=true;
@@ -70,7 +70,7 @@ public class CheckAndroidManiFest {
 		return result;
 	}
 	
-	public static boolean twoNodeAreEqual(Element targetNode,Element standarNode){
+	public  boolean twoNodeAreEqual(Element targetNode,Element standarNode){
 		boolean result=false;
 		if(standarNode.getName().equals("uses-permission")) result=permissionNodeEqualToAnnother(targetNode,standarNode);
 		if(standarNode.getName().equals("application")) result=applicationNodeEqualToAnnother(targetNode,standarNode);
@@ -81,7 +81,7 @@ public class CheckAndroidManiFest {
 		return result;
 	}
 	
-	public static boolean metadataNodeEqualToAnnother(Element targetNode,Element standarNode){
+	public  boolean metadataNodeEqualToAnnother(Element targetNode,Element standarNode){
 		boolean result=false;
         if(targetNode.getName().equals(standarNode.getName())){
 			
@@ -95,7 +95,7 @@ public class CheckAndroidManiFest {
 		return result;		
 	}
 	
-	public static boolean serviceNodeEqualToAnnother(Element targetNode,Element standarNode){
+	public  boolean serviceNodeEqualToAnnother(Element targetNode,Element standarNode){
 		boolean result=false;
         if(targetNode.getName().equals(standarNode.getName())){
 			
@@ -109,7 +109,7 @@ public class CheckAndroidManiFest {
 		return result;		
 	}
 	
-	public static boolean receiverNodeEqualToAnnother(Element targetNode,Element standarNode){
+	public  boolean receiverNodeEqualToAnnother(Element targetNode,Element standarNode){
 		boolean result=false;
         if(targetNode.getName().equals(standarNode.getName())){
 			
@@ -123,7 +123,7 @@ public class CheckAndroidManiFest {
 		return result;		
 	}
 	
-	public static boolean applicationNodeEqualToAnnother(Element targetNode,Element standarNode){
+	public  boolean applicationNodeEqualToAnnother(Element targetNode,Element standarNode){
 		boolean result=false;
         if(targetNode.getName().equals(standarNode.getName())){
 			
@@ -138,7 +138,7 @@ public class CheckAndroidManiFest {
 		return result;		
 	}
 	
-	public static boolean permissionNodeEqualToAnnother(Element targetNode,Element standarNode){
+	public  boolean permissionNodeEqualToAnnother(Element targetNode,Element standarNode){
 		boolean result=false;
         if(targetNode.getName().equals(standarNode.getName())){
 			
@@ -152,7 +152,7 @@ public class CheckAndroidManiFest {
 		return result;		
 	}
 	
-	public static boolean activityNodeEqualToAnnother(Element targetNode,Element standarNode){
+	public  boolean activityNodeEqualToAnnother(Element targetNode,Element standarNode){
 		boolean result=false;
         if(targetNode.getName().equals(standarNode.getName())){
 			
@@ -166,7 +166,7 @@ public class CheckAndroidManiFest {
 		return result;		
 	}
 	
-	public static void circleAddNode(ArrayList<Element> nodes,Element e){
+	public  void circleAddNode(ArrayList<Element> nodes,Element e){
 		if(shouldAdd(e)){
 			nodes.add(e);
 		}
@@ -177,7 +177,7 @@ public class CheckAndroidManiFest {
 		}
 	}
 	
-	public static void beginSetNodes(ArrayList<Element> nodes,String filePath){
+	public  void beginSetNodes(ArrayList<Element> nodes,String filePath){
 		SAXReader reader = new SAXReader();
 		Document document = null;
 		try {
@@ -189,7 +189,7 @@ public class CheckAndroidManiFest {
 		Element root = document.getRootElement();
 		circleAddNode(nodes,root);
 	}
-	public static boolean shouldAdd(Element e){
+	public  boolean shouldAdd(Element e){
 		boolean result=false;
 		String elementName=e.getName();
 		if(elementName.equals("uses-permission")||elementName.equals("application")||elementName.equals("activity")
@@ -199,11 +199,11 @@ public class CheckAndroidManiFest {
 		
 		return result;		
 	}
-	public static ArrayList<Element> getResultNodes() {
+	public  ArrayList<Element> getResultNodes() {
 		return resultNodes;
 	}
 	
-	public static void outPutLog(String outPutFilePath){
+	public  void outPutLog(String outPutFilePath){
 		
 				
 				File file =new File(outPutFilePath);    
@@ -227,9 +227,9 @@ public class CheckAndroidManiFest {
 		
 	}
 	
-	public static void outPutTxtLog(String outPutFilePath){
+	public  void outPutTxtLog(String outPutFilePath){
 		StringBuilder sb=new StringBuilder();
-		String outputfile=new String(outPutFilePath+"/"+version+"分析结果"+".txt");
+		String outputfile=new String(outPutFilePath+"/"+"AndroidManifest分析结果"+".txt");
 		byte[] buff=new byte[]{};			
 				FileOutputStream os;
 				try {
@@ -259,8 +259,8 @@ public class CheckAndroidManiFest {
 				}			
 	}
 	
-	public static void outPutXmlLog(String outPutFilePath) throws IOException{
-		String outputfile=new String(outPutFilePath+"/"+version+"检验结果"+".xml");
+	public  void outPutXmlLog(String outPutFilePath) throws IOException{
+		String outputfile=new String(outPutFilePath+"/"+"AndroidManifest检验结果"+".xml");
 		 Document doc=DocumentHelper.createDocument();
 		 Element root=doc.addElement("result");
 		 root.setText("校验结果");
@@ -282,13 +282,13 @@ public class CheckAndroidManiFest {
 	       
 	}
 	
-	public static void doCheckAndroidManiFest(){
-		String apkName="";
+	public  void doCheckAndroidManiFest(){
+		/*String apkName="";
 		String version=null;		
 		apkName=Util.getApkName();
-		version=Util.getVersion(apkName);
-		CheckAndroidManiFest.getInstance(Util.getTargetApkDecompilePath()+"AndroidManifest.xml", version);
-		CheckAndroidManiFest.check();
+		version=Util.getVersion(apkName);*/
+		//CheckAndroidManiFest.getInstance(Util.getTargetApkDecompilePath()+"AndroidManifest.xml", version);
+		check();
 			
 	}
 }
