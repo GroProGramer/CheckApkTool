@@ -19,7 +19,7 @@ public class CheckInterface {
 
 	public static StringBuilder checkInterfaceResult=new StringBuilder();
 	//public static StringBuilder checkSupportV4Result=new StringBuilder();
-	
+	private static CheckInterface CI;
 	public static String[] forceCallInterfaceTable={
 		"onCreate","onResume","onPause","onStart","onStop","onDestroy","onBackPressed",
 		"onActivityResult","onRoleLoaded","setScreenPortrait","appInit","initSDK","showPayView",
@@ -29,7 +29,16 @@ public class CheckInterface {
 	
 	public static HashMap<String,Integer> stanInterfaceTable=new HashMap<String,Integer>();
 	
-	public static void checkFiles(File targetFile){
+	private CheckInterface(){};
+	public static CheckInterface getInstance(){
+		if(CI==null){
+			CI=new CheckInterface();
+		}
+		return CI;
+		
+	}
+	
+	public  void checkFiles(File targetFile){
 		File[] files=targetFile.listFiles();
 		for(int i=0;i<files.length;i++){
 			File f=files[i];
@@ -42,12 +51,12 @@ public class CheckInterface {
 		}
 	}
 	
-	public static void checkAFile(File f){
+	public  void checkAFile(File f){
 		setCheckInterfaceResult(f);		
 		//setCheckSupportPckResult(f);
 	}
 	
-	public static void check(File rootFile){
+	public  void check(File rootFile){
 		File[] files=rootFile.listFiles();
 		for(int i=0;i<files.length;i++){
 			File f=files[i];
@@ -58,7 +67,7 @@ public class CheckInterface {
 		showInterfaceCallTimes();
 	}
 	
-	public static void outPutLog(){
+	public  void outPutLog(){
 		showInterfaceCallTimes();
 		//setCpUseSupportV4Result();
 		Util.outPutLog("checkInterface", "checkInterface.txt", checkInterfaceResult.toString());
@@ -68,7 +77,7 @@ public class CheckInterface {
 	
 	
 	
-	public static void setCheckInterfaceResult(File f) {
+	public  void setCheckInterfaceResult(File f) {
 		if(f.getAbsolutePath().contains("com\\jodo")||f.getAbsolutePath().contains("com\\nostra13")||f.getAbsolutePath().contains("com\\facebook"))
 				return;
         BufferedReader reader = null;
@@ -102,7 +111,7 @@ public class CheckInterface {
         } 
     }
 	
-	public static void showInterfaceCallTimes(){		
+	public  void showInterfaceCallTimes(){		
         Element application=GlobalValues.getApplication();
         Attribute appname=application.attribute("name");
         if(appname!= null&&appname.getValue().equals("com.jodo.paysdk.JodoApp")){
@@ -129,7 +138,7 @@ public class CheckInterface {
         }
 	}
 	
-	public static void doCheckInterface(){
+	public void CheckInterface(){
 		File f=Util.getTargetApkFile();
 		check(f);
 		//outPutLog();

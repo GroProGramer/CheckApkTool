@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import jodoplay.checkToolManager.CheckToolManager;
 import jodoplay.global.GlobalValues;
 import jodoplay.util.Util;
 
@@ -42,13 +43,14 @@ public class CheckAndroidManiFest {
 		return cam;
 		
 	}
-	public  void check(){
+	public void CheckAndroidManiFest(){
 		//String standarFilePath="standard/"+version+"/AndroidManifest"+".xml";
 		String standarFilePath=GlobalValues.getStanManifestXmlPath();
 		beginSetNodes(targetNodes,targetFilePath);
 		beginSetNodes(standarNodes,standarFilePath);
 		compare(targetNodes,standarNodes,resultNodes);
-		outPutLog("./AndroidManifest检验结果");	
+		//outPutLog("./AndroidManifest检验结果");	
+		setCheckManiFestResult();
 	}
 	
 	public  void compare(ArrayList<Element> targetNodes,ArrayList<Element> standarNodes,ArrayList<Element> resultNodes){
@@ -282,13 +284,21 @@ public class CheckAndroidManiFest {
 	       
 	}
 	
-	public  void doCheckAndroidManiFest(){
-		/*String apkName="";
-		String version=null;		
-		apkName=Util.getApkName();
-		version=Util.getVersion(apkName);*/
-		//CheckAndroidManiFest.getInstance(Util.getTargetApkDecompilePath()+"AndroidManifest.xml", version);
-		check();
+	public void setCheckManiFestResult(){
+		if(resultNodes.size()==0) CheckToolManager.checkManiFestResultAppend("检验结果:没有问题！");
+		else {
 			
+			CheckToolManager.checkManiFestResultAppend("缺少以下结点\r\n\r\n");
+			for(Element e:resultNodes){
+				CheckToolManager.checkManiFestResultAppend("结点名"+e.getName()+"\r\n");
+				for(Attribute attr:(List<Attribute>)e.attributes()){
+					CheckToolManager.checkManiFestResultAppend("属性名"+attr.getName()+"\t"+"属性值"+attr.getValue()+"\r\n");
+				}
+				
+				CheckToolManager.checkManiFestResultAppend("\r\n");
+			}
+		}
 	}
+	
+	
 }

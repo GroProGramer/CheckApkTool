@@ -9,6 +9,8 @@ import java.util.ArrayList;
 import java.util.zip.CRC32;
 import java.util.zip.CheckedInputStream;
 
+import jodoplay.checkToolManager.CheckToolManager;
+
 import org.apache.commons.codec.digest.DigestUtils;
 
 public class CheckMD5AndCRC {
@@ -58,7 +60,7 @@ public class CheckMD5AndCRC {
 	   
    }
    
-   public void checkAllFiles(){
+   public void CheckCRCAndMD5Code(){
 	   try {
 		setReferTable(standardRootFile);
 		setTargetTable(targetRootFile);
@@ -72,7 +74,8 @@ public class CheckMD5AndCRC {
 	   for(MyFile targetFile:referTable){
 		   checkAFile(targetFile,targetTable);
 	   }
-	   outPutCheckCodeLog("MD5与CRC码校验结果");
+	   //outPutCheckCodeLog("MD5与CRC码校验结果");
+	   setCheckMd5AndCRCResult();
    }
    
    public MyFile getReferFile(MyFile targetFile,ArrayList<MyFile> referTable){
@@ -166,7 +169,7 @@ public class CheckMD5AndCRC {
 	   return problemFiles;
    }
    
-   public void outPutCheckCodeLog(String outPutFilePath){
+   /*public void outPutCheckCodeLog(String outPutFilePath){
 	   File file =new File(outPutFilePath);    
 		//如果文件夹不存在则创建    
 		if  (!file .exists()  && !file .isDirectory())      
@@ -199,13 +202,18 @@ public class CheckMD5AndCRC {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-   }
+   }*/
    
-   public static void doCheckCode(String targetRootFilePath,String standardRootFilePath){
-		CheckMD5AndCRC cm=CheckMD5AndCRC.getInstance(targetRootFilePath,standardRootFilePath);
-		cm.checkAllFiles();
-		
-	}
+   public void setCheckMd5AndCRCResult(){
+	   if(problemFiles.size()==0) CheckToolManager.checkMd5AndCRCResultAppend("检验结果:没有问题！");
+	   else{
+		   CheckToolManager.checkMd5AndCRCResultAppend("以下文件有问题\r\n");
+		   for(MyFile f:problemFiles){
+				CheckToolManager.checkMd5AndCRCResultAppend("文件名："+f.getFileName()+"\r\n文件路径："+f.getFilePath()
+						+"\r\n问题类型："+f.getFileStatus()+"\r\n\r\n");
+			}
+	   }
+   }
 }
 
 

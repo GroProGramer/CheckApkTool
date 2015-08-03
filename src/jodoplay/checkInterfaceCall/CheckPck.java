@@ -42,11 +42,6 @@ public class CheckPck {
 	        try {
 	            reader = new BufferedReader(new FileReader(f));
 	            String tempString = null;
-	            /*while ((tempString = reader.readLine()) != null) {
-	            	if(codeUseSupportV4(tempString))
-	            		isCpUsePck=true;
-	            }	  
-	            if(isCpUsePck)  System.out.println(f.getAbsolutePath());*/
 	            while((tempString = reader.readLine()) != null){
 	            	for(LibConfig lc:CheckToolManager.getConfigs()){
 	            		if(tempString.contains(lc.getCheckKey())) 
@@ -78,7 +73,7 @@ public class CheckPck {
 		}
 	}
 	
-	public  void doCheck(){
+	public  void CheckPck(){
 		File f=Util.getTargetApkFile();
 		check(f);
 		setCpUsePckResult();
@@ -94,4 +89,6 @@ public class CheckPck {
 			}
 		}
 	}
+	
+	
 }

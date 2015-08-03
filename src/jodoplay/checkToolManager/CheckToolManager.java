@@ -18,6 +18,7 @@ public class CheckToolManager {
 	private static File smaliFiles;
 	private static StringBuilder checkInterfaceResult=new StringBuilder(); 
 	private static StringBuilder checkManiFestResult=new StringBuilder(); 
+	private static StringBuilder checkMd5AndCRCResult=new StringBuilder(); 
 	private static ArrayList<LibConfig> configs=new ArrayList<LibConfig>();
 	public static void init(){
 		Util.decompileTargetApk();
@@ -69,19 +70,36 @@ public class CheckToolManager {
 		checkInterfaceResult.append(s);
 	}
 	
-	public static void outPutCheckInterfaceLog(){
-		Util.outPutLog("checkInterface", "checkInterface.txt", checkInterfaceResult.toString());
+	public static void checkManiFestResultAppend(String s){
+		checkManiFestResult.append(s);
 	}
+	
+	public static void checkMd5AndCRCResultAppend(String s){
+		checkMd5AndCRCResult.append(s);
+	}
+	
 
 	public static ArrayList<LibConfig> getConfigs() {
 		return configs;
 	}
 	
+    public static void outPutInterfaceAndLibsCheckLog(){
+    	Util.outPutLog("checkInterface", "checkInterface.txt", checkInterfaceResult.toString());
+	}
 	
+    public static void outPutAndroidManiFestCheckLog(){
+    	Util.outPutLog("AndroidManiFest", "AndroidManiFestCheck.txt", checkManiFestResult.toString());
+	}
+    
+    public static void outPutMd5AndCRCCheckLog(){
+    	Util.outPutLog("MD5与CRC码校验结果", "MD5与CRC码校验结果.txt", checkMd5AndCRCResult.toString());
+	}
 	
-	
-	
-	
+	public static void outPutLog(){
+		outPutInterfaceAndLibsCheckLog();
+		outPutAndroidManiFestCheckLog();
+		outPutMd5AndCRCCheckLog();
+	}
 	
 	
 	
