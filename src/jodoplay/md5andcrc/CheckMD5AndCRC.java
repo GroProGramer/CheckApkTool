@@ -205,11 +205,11 @@ public class CheckMD5AndCRC {
    }*/
    
    public void setCheckMd5AndCRCResult(){
-	   if(problemFiles.size()==0) CheckToolManager.checkMd5AndCRCResultAppend("检验结果:没有问题！");
+	   if(problemFiles.size()==0) CheckToolManager.getInstance().checkMd5AndCRCResultAppend("检验结果:没有问题！");
 	   else{
-		   CheckToolManager.checkMd5AndCRCResultAppend("以下文件有问题\r\n");
+		   CheckToolManager.getInstance().checkMd5AndCRCResultAppend("以下文件有问题\r\n");
 		   for(MyFile f:problemFiles){
-				CheckToolManager.checkMd5AndCRCResultAppend("文件名："+f.getFileName()+"\r\n文件路径："+f.getFilePath()
+				CheckToolManager.getInstance().checkMd5AndCRCResultAppend("文件名："+f.getFileName()+"\r\n文件路径："+f.getFilePath()
 						+"\r\n问题类型："+f.getFileStatus()+"\r\n\r\n");
 			}
 	   }

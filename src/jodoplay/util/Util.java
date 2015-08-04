@@ -8,6 +8,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.StringWriter;
 
+import jodoplay.checkToolManager.CheckToolManager;
+
 public class Util {
 
 	public static void decompileTargetApk(String targetApkName){
@@ -19,8 +21,10 @@ public class Util {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			CheckToolManager.getInstance().exceptionAppend(e+"\r\n");
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
+			CheckToolManager.getInstance().exceptionAppend(e+"\r\n");
 			e.printStackTrace();
 		} 
 	}
@@ -35,9 +39,11 @@ public class Util {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			CheckToolManager.getInstance().exceptionAppend(e+"\r\n");
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			CheckToolManager.getInstance().exceptionAppend(e+"");
 		} 
 	}
 	
@@ -55,7 +61,9 @@ public class Util {
 				break;
 			}
 		}
-		
+		if(apkName.equals("")){
+			CheckToolManager.getInstance().exceptionAppend("根目录找不到要检测的apk文件\r\n");
+		}
 		return apkName;
 	}
 	
@@ -148,9 +156,11 @@ public class Util {
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			CheckToolManager.getInstance().exceptionAppend("输出log到文件时出错，找不到可以输出log的文件\r\n");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			CheckToolManager.getInstance().exceptionAppend("输出log到文件时出错，"+e+"\r\n");
 		}
 		
     }

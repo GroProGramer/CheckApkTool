@@ -25,17 +25,17 @@ public class CheckPck {
 	
 	public  void setCpUsePckResult(){
 		if(libs.size()==0){
-			CheckToolManager.checkInterfaceResultAppend("CP沒有使用配置中要求检测的包\r\n");
+			CheckToolManager.getInstance().checkInterfaceResultAppend("CP沒有使用配置中要求检测的包\r\n");
 		}
 		for(String libname:libs){
-			CheckToolManager.checkInterfaceResultAppend("CP使用了"+libname+"\r\n");
+			CheckToolManager.getInstance().checkInterfaceResultAppend("CP使用了"+libname+"\r\n");
 		}
 	}
 	
 	public  void setCheckPckResult(File f){
 		if(f.getAbsolutePath().contains("com\\jodo")||f.getAbsolutePath().contains("com\\facebook")||f.getAbsolutePath().contains("com\\air"))//
 			return;
-		for(LibConfig lc:CheckToolManager.getConfigs()){
+		for(LibConfig lc:CheckToolManager.getInstance().getConfigs()){
 			if(f.getAbsolutePath().contains(lc.getSrc())) return;
 		}
 		 BufferedReader reader = null;
@@ -43,7 +43,7 @@ public class CheckPck {
 	            reader = new BufferedReader(new FileReader(f));
 	            String tempString = null;
 	            while((tempString = reader.readLine()) != null){
-	            	for(LibConfig lc:CheckToolManager.getConfigs()){
+	            	for(LibConfig lc:CheckToolManager.getInstance().getConfigs()){
 	            		if(tempString.contains(lc.getCheckKey())) 
 	            			{
 	            			  addToLibs(lc.getLibname());

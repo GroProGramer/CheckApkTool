@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/jodoplay_base_container" style="@style/jd_base_container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/jodoplay_title_register_confirm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/jodoplay_base_layout_margin_left" android:layout_marginTop="@dimen/jodoplay_title_layout_margin_top" android:layout_marginRight="@dimen/jodoplay_base_layout_margin_right" android:layout_marginStart="@dimen/jodoplay_base_layout_margin_left" android:layout_marginEnd="@dimen/jodoplay_base_layout_margin_right" layout="@layout/jodoplay_base_title" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/jodoplay_base_layout_margin_left" android:layout_marginTop="@dimen/jodoplay_base_mid_layout_margin_top" android:layout_marginRight="@dimen/jodoplay_base_layout_margin_right" android:layout_marginStart="@dimen/jodoplay_base_layout_margin_left" android:layout_marginEnd="@dimen/jodoplay_base_layout_margin_right">
+        <include layout="@layout/jodoplay_regconfirm_accountbox" />
+        <Button android:id="@id/jodoplay_register_confirm_btn" android:layout_marginTop="@dimen/jodoplay_regconfirm_btn_margin_top" android:layout_marginBottom="@dimen/jodoplay_regconfirm_btn_margin_bottom" android:text="@string/jodoplay_enter_game" style="@style/jd_reg_login_btn_port" />
+    </LinearLayout>
+</LinearLayout>

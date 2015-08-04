@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="@dimen/jodoplay_landscape_width" android:layout_centerInParent="true" style="@style/jd_base_container">
+        <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/jodoplay_sysnotice_title_margin_all">
+            <TextView android:textSize="@dimen/jodoplay_sysnotice_title_textsize" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/jodoplay_sys_notice_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jodoplay_sys_notice_title" />
+        </LinearLayout>
+        <RelativeLayout android:layout_gravity="center" android:id="@id/jodoplay_sys_notice_adv" android:layout_width="wrap_content" android:layout_height="@dimen/jodoplay_sysnotice_quit_adv_height" android:layout_margin="@dimen/jodoplay_sysnotice_quit_adv_margin" />
+        <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/jodoplay_sysnotice_quit_button_margin_all" android:layout_marginRight="@dimen/jodoplay_sysnotice_quit_button_margin_all" android:layout_marginBottom="@dimen/jodoplay_sysnotice_quit_button_margin_all">
+            <Button android:textSize="@dimen/jodoplay_sysnotice_btn_textsize" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/jodoplay_sys_notice_confirm" android:background="@drawable/jodoplay_btn_default" android:padding="@dimen/jodoplay_sysnotice_quit_button_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/jodoplay_sysnotice_button_margin_left" android:layout_marginRight="@dimen/jodoplay_sysnotice_button_margin_left" android:text="@string/jodoplay_sys_notice_confirm" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

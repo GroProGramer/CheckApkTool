@@ -187,6 +187,7 @@ public class CheckAndroidManiFest {
 		} catch (DocumentException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			CheckToolManager.getInstance().exceptionAppend(e+"");
 		}
 		Element root = document.getRootElement();
 		circleAddNode(nodes,root);
@@ -224,6 +225,7 @@ public class CheckAndroidManiFest {
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
+					CheckToolManager.getInstance().exceptionAppend(e+"");
 				}
 			
 		
@@ -255,9 +257,11 @@ public class CheckAndroidManiFest {
 				} catch (FileNotFoundException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
+					CheckToolManager.getInstance().exceptionAppend(e1+"\r\n");
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
+					CheckToolManager.getInstance().exceptionAppend(e+"\r\n");
 				}			
 	}
 	
@@ -280,22 +284,23 @@ public class CheckAndroidManiFest {
 		} catch (IOException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
+			CheckToolManager.getInstance().exceptionAppend(e1+"");
 		}
 	       
 	}
 	
 	public void setCheckManiFestResult(){
-		if(resultNodes.size()==0) CheckToolManager.checkManiFestResultAppend("检验结果:没有问题！");
+		if(resultNodes.size()==0) CheckToolManager.getInstance().checkManiFestResultAppend("检验结果:没有问题！");
 		else {
 			
-			CheckToolManager.checkManiFestResultAppend("缺少以下结点\r\n\r\n");
+			CheckToolManager.getInstance().checkManiFestResultAppend("缺少以下结点\r\n\r\n");
 			for(Element e:resultNodes){
-				CheckToolManager.checkManiFestResultAppend("结点名"+e.getName()+"\r\n");
+				CheckToolManager.getInstance().checkManiFestResultAppend("结点名"+e.getName()+"\r\n");
 				for(Attribute attr:(List<Attribute>)e.attributes()){
-					CheckToolManager.checkManiFestResultAppend("属性名"+attr.getName()+"\t"+"属性值"+attr.getValue()+"\r\n");
+					CheckToolManager.getInstance().checkManiFestResultAppend("属性名"+attr.getName()+"\t"+"属性值"+attr.getValue()+"\r\n");
 				}
 				
-				CheckToolManager.checkManiFestResultAppend("\r\n");
+				CheckToolManager.getInstance().checkManiFestResultAppend("\r\n");
 			}
 		}
 	}

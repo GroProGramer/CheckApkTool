@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/jodoplay_service_chatting_textsize" android:textColor="@color/jodoplay_service_black" android:gravity="start" android:id="@id/jodoplay_service_chatting_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/jodoplay_service_chatting_text_margin_hori" android:layout_marginRight="@dimen/jodoplay_service_chatting_text_margin_hori" android:maxWidth="@dimen/jodoplay_service_chatting_msg_maxwidth"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

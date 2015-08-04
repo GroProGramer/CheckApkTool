@@ -19,16 +19,25 @@ public class CheckToolManager {
 	private static StringBuilder checkInterfaceResult=new StringBuilder(); 
 	private static StringBuilder checkManiFestResult=new StringBuilder(); 
 	private static StringBuilder checkMd5AndCRCResult=new StringBuilder(); 
+	private static StringBuilder exceptions=new StringBuilder(); 
 	private static ArrayList<LibConfig> configs=new ArrayList<LibConfig>();
-	public static void init(){
+	private static CheckToolManager ctm;
+	
+	public static CheckToolManager getInstance(){
+		if(ctm==null){
+			ctm=new CheckToolManager();
+		}
+		return ctm;
+		
+	}
+	public  void init(){
 		Util.decompileTargetApk();
 		initConfig();
 		setManiFestFile(new File(Util.getTargetApkDecompilePath()+"AndroidManifest.xml"));
-		//setSmaliFiles(new File(Util.getApkName()+"/smali"));
 	
 	}
 	
-	public static void initConfig(){
+	public  void initConfig(){
 		SAXReader reader = new SAXReader();
 		Document document = null;
 		try {
@@ -36,13 +45,14 @@ public class CheckToolManager {
 		} catch (DocumentException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			exceptionAppend("根目录找不到config.xml\r\n");
 		}
 		Element root = document.getRootElement();
 		circleAddNode(configs,root);
 		
 	}
 	
-	public static void circleAddNode(ArrayList<LibConfig> nodes,Element e){
+	public  void circleAddNode(ArrayList<LibConfig> nodes,Element e){
 		if(e.getName().equals("lib")){
 		   LibConfig lc=new LibConfig(e);
 		   nodes.add(lc);
@@ -53,52 +63,63 @@ public class CheckToolManager {
 			circleAddNode(nodes,childNode);
 		}
 	}
-	public static File getManiFestFile() {
+	public  File getManiFestFile() {
 		return ManiFestFile;
 	}
-	public static void setManiFestFile(File maniFestFile) {
+	public  void setManiFestFile(File maniFestFile) {
 		ManiFestFile = maniFestFile;
 	}
-	public static File getSmaliFiles() {
+	public  File getSmaliFiles() {
 		return smaliFiles;
 	}
-	public static void setSmaliFiles(File smaliFiles) {
+	public  void setSmaliFiles(File smaliFiles) {
 		CheckToolManager.smaliFiles = smaliFiles;
 	}
 	
-	public static void checkInterfaceResultAppend(String s){
+	public void checkInterfaceResultAppend(String s){
 		checkInterfaceResult.append(s);
 	}
 	
-	public static void checkManiFestResultAppend(String s){
+	public void checkManiFestResultAppend(String s){
 		checkManiFestResult.append(s);
 	}
 	
-	public static void checkMd5AndCRCResultAppend(String s){
+	public void exceptionAppend(String s){
+		exceptions.append(s);
+	}
+	
+	public void checkMd5AndCRCResultAppend(String s){
 		checkMd5AndCRCResult.append(s);
 	}
 	
 
-	public static ArrayList<LibConfig> getConfigs() {
+	public ArrayList<LibConfig> getConfigs() {
 		return configs;
 	}
 	
-    public static void outPutInterfaceAndLibsCheckLog(){
+    public void outPutInterfaceAndLibsCheckLog(){
     	Util.outPutLog("checkInterface", "checkInterface.txt", checkInterfaceResult.toString());
 	}
 	
-    public static void outPutAndroidManiFestCheckLog(){
+    public void outPutAndroidManiFestCheckLog(){
     	Util.outPutLog("AndroidManiFest", "AndroidManiFestCheck.txt", checkManiFestResult.toString());
 	}
     
-    public static void outPutMd5AndCRCCheckLog(){
+    public void outPutMd5AndCRCCheckLog(){
     	Util.outPutLog("MD5与CRC码校验结果", "MD5与CRC码校验结果.txt", checkMd5AndCRCResult.toString());
 	}
+    
+    public void outPutException(){
+         if(exceptions.length()!=0){
+        	 Util.outPutLog("程序运行异常", "程序异常分析.txt", exceptions.toString());
+         }
+    }
 	
-	public static void outPutLog(){
+	public void outPutLog(){
 		outPutInterfaceAndLibsCheckLog();
 		outPutAndroidManiFestCheckLog();
 		outPutMd5AndCRCCheckLog();
+		outPutException();
 	}
 	
 	

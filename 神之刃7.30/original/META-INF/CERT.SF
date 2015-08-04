@@ -1,0 +1,1195 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android)
+SHA1-Digest-Manifest: /EmIjCHdgYQ9XvSQ9GBtCIDixN0=
+
+Name: lib/armeabi-v7a/libgnustl_shared.so
+SHA1-Digest: TIOkqHVU9Ux+LUK+XFw8IbYbRQM=
+
+Name: lib/armeabi-v7a/libcheck.so
+SHA1-Digest: KdnxV+1n36OjyMYwgaxv/jyQHNA=
+
+Name: res/drawable/com_facebook_picker_list_longpressed.9.png
+SHA1-Digest: 2CGPL/jp5oPTQ2ltrIIWxbJ07UM=
+
+Name: res/layout-land/jodoplay_pre_login_account_box.xml
+SHA1-Digest: P6I/HD4EekMCWr2CrnWyIBvVZrQ=
+
+Name: res/drawable-sw600dp-xhdpi/jodoplay_loading.png
+SHA1-Digest: FB+XNz7pSvYuvFQMals4XA1UlnU=
+
+Name: res/anim/jodoplay_slide_up_out.xml
+SHA1-Digest: 5W6xXpFeULxK25D43O4WChsAclM=
+
+Name: res/drawable-hdpi/jodoplay_icon_jpoint.png
+SHA1-Digest: xxobAXlI5IuyQfePEfzjBHS0FZU=
+
+Name: res/drawable-hdpi/com_facebook_tooltip_blue_xout.png
+SHA1-Digest: LwYdPP0snEZ/75fu04R/zrhpsUY=
+
+Name: res/drawable-hdpi/com_facebook_logo.png
+SHA1-Digest: y19LKlCd/kNjMIFhJWteCzViWY4=
+
+Name: res/layout/launcher.xml
+SHA1-Digest: IJJQEO+MJiaZ/oaOi8rqTvO7FsQ=
+
+Name: res/layout/jodoplay_buoy_detail_window.xml
+SHA1-Digest: kRnKZpZfMCS8SkQW4ECSd3T/cAY=
+
+Name: res/layout/jodoplay_service_receiver_container.xml
+SHA1-Digest: 34v/yQScJDVauvmLMB+YPLOkc9U=
+
+Name: res/layout/jodoplay_2quickreg.xml
+SHA1-Digest: WXpWA/JNFzV5MWO8ZeVXzWrsjz4=
+
+Name: res/drawable-xxhdpi/ic_launcher.png
+SHA1-Digest: E/k+ea+hqW7j7VGel4XFWL0Zc9E=
+
+Name: res/drawable-xxhdpi/jodoplay_buoy_icon_fb_fans.png
+SHA1-Digest: wTUvS/OjJNZ1WPo2xU2XaMeZJ0M=
+
+Name: res/drawable-hdpi/com_facebook_button_blue_pressed.9.png
+SHA1-Digest: 1PUH2upvCaaQU4oiFEQdqSjRCnQ=
+
+Name: res/drawable-sw600dp-xhdpi/jodoplay_icon_fb_disable.png
+SHA1-Digest: Kkm+nWTcZOlR8SLxv5VhGTmUAvI=
+
+Name: res/drawable-hdpi/com_facebook_tooltip_blue_bottomnub.png
+SHA1-Digest: QzIB4u5rMaREmYw2CwpdoriW96A=
+
+Name: res/layout-land/jodoplay_layout_register_confirm.xml
+SHA1-Digest: CmlUFAACU5nl32lmJeFJW0027sA=
+
+Name: res/layout/jodoplay_service_exit_confirm.xml
+SHA1-Digest: 2TlusyNKK1kEy7dUkHiqG3SYm/c=
+
+Name: res/layout/com_facebook_search_bar_layout.xml
+SHA1-Digest: HdBR819m/9rrBpKVh1TrnTN9McI=
+
+Name: res/drawable-mdpi/com_facebook_picker_magnifier.png
+SHA1-Digest: tbw/2Wj3gFFXgq/F7+wNzMMCpLc=
+
+Name: res/drawable-hdpi/jodoplay_service_system_loding.png
+SHA1-Digest: Ob1psty0OIq8Wg2iwR/pW+9flio=
+
+Name: res/layout-land-480x320/vkeyboard.xml
+SHA1-Digest: Cnl28WmVYjTyKwqqGfKC+A0DzZE=
+
+Name: res/layout/jodoplay_service_chatting_datetime.xml
+SHA1-Digest: xRPSIe5rKtTMgIDENeWkMv+YXqg=
+
+Name: res/drawable-hdpi/powered_by_google_light.png
+SHA1-Digest: dWJEWY/ZZ4u9eNqd71tvdNz1VcU=
+
+Name: res/drawable/com_facebook_picker_list_pressed.9.png
+SHA1-Digest: i8wiLpNnwVmZT0gGaKOpLc0UEU8=
+
+Name: res/layout-port/jodoplay_layout_register_confirm.xml
+SHA1-Digest: WDeoTZ1bZTFt4mV/WrBLsw8VkZU=
+
+Name: res/drawable-xxhdpi/jodoplay_logo.png
+SHA1-Digest: r8EN3lfbJQmMKIEGkczKfaNL8q8=
+
+Name: res/drawable/com_facebook_button_check_on.png
+SHA1-Digest: rjVRU8l7DUbPqpUS/dYK687Kp68=
+
+Name: res/drawable/com_facebook_logo.png
+SHA1-Digest: NIzHTyzOz6AKfyTc3e6lYXTz2Fc=
+
+Name: res/layout/jodoplay_wmtoast_layout.xml
+SHA1-Digest: ElrbROPD43jv3asL7NNIF1p8i6Q=
+
+Name: res/drawable/jodoplay_service_solvedask_btn_unpressed.xml
+SHA1-Digest: GZiC2OgnZFbe8AP+8pbmoel5Ip0=
+
+Name: res/layout-land-1024x600/vkeyboard.xml
+SHA1-Digest: qg/PW878/HuuCUK+8XArlRZ4wk4=
+
+Name: res/drawable-sw600dp-xhdpi/jodoplay_down_arrow.png
+SHA1-Digest: w/Qtl8LlW0CP9Ra13C4/7mKaMZk=
+
+Name: res/drawable/com_facebook_button_blue.xml
+SHA1-Digest: h+UuYOBHjQGbAe2X9fHcZ+mvckE=
+
+Name: res/layout/jodoplay_back2login.xml
+SHA1-Digest: v1zjBc/JelHD3lq1FM0zMgKo9+0=
+
+Name: res/drawable/jodoplay_pgb_welcome.xml
+SHA1-Digest: LuEk70WHYDE3bGZSzogF8Rdgg18=
+
+Name: lib/armeabi-v7a/libcompress.so
+SHA1-Digest: lCH4LxSjeiooyxzzMQstCxo/aNc=
+
+Name: res/drawable-hdpi/jodoplay_autologin_logo_bg.9.png
+SHA1-Digest: JyYO46lRmlczsq98FSyjW/B7we0=
+
+Name: res/drawable/jodoplay_title_split.xml
+SHA1-Digest: RIOtrKaWmSjrT6AHdH8bvxIYbKE=
+
+Name: res/drawable/com_facebook_button_like.xml
+SHA1-Digest: D85U3693pX4jNMuGp9QmewB88dQ=
+
+Name: res/drawable-hdpi/ic_plusone_small_off_client.png
+SHA1-Digest: 98br5LtZ8pDpWGlHJ+uz9smDZgg=
+
+Name: res/layout/com_facebook_usersettingsfragment.xml
+SHA1-Digest: Q9xrWdZWKrw6IZntvYv9snCVeWo=
+
+Name: res/drawable-sw600dp-xhdpi/jodoplay_buoy_icon_account.png
+SHA1-Digest: 8lGkdtsaxWrvA/715FhbKJcq6eQ=
+
+Name: res/drawable-sw600dp-xhdpi/jodoplay_buoy_icon_bbs.png
+SHA1-Digest: LuW4FkMYLnJWVgFleW+BLlRk9Ic=
+
+Name: res/drawable/jodoplay_stroke_progress_bar.xml
+SHA1-Digest: WWpepv4HQxFaJ8BX3sJ5HFsNCNA=
+
+Name: res/layout/jodoplay_otherlogin.xml
+SHA1-Digest: nhVOLtx6oo/ab/aY55O4dKcBeiM=
+
+Name: res/drawable-sw600dp-xhdpi/jodoplay_buoy_icon_bg_pressed.png
+SHA1-Digest: dXGmK6EbS0V68psNZRk0uJBXm3I=
+
+Name: res/layout/jodoplay_service_chat_item_textmsg_sender.xml
+SHA1-Digest: ONEFSzR31+h6Wj18MaiHD6l4kP8=
+
+Name: res/drawable/com_facebook_picker_list_selector_background_transi
+ tion.xml
+SHA1-Digest: tHS541z4bXdKunjSPbt9HYhWKZ8=
+
+Name: res/drawable-mdpi/com_facebook_tooltip_black_background.9.png
+SHA1-Digest: rdvQdxtzuIrFtvf/X5KyGwldnDs=
+
+Name: res/drawable-xxhdpi/com_facebook_button_like_background.png
+SHA1-Digest: 6zgn9PUz+zmwtGoAPBbB9SO59Rw=
+
+Name: res/layout-land/jodoplay_layout_login.xml
+SHA1-Digest: /LgvFU9lM8Fp1IcR/gQ29efFiz0=
+
+Name: res/drawable-xhdpi/com_facebook_button_grey_pressed.9.png
+SHA1-Digest: N6+Om7AaJoAhWJfglle8sMaEKuU=
+
+Name: res/layout/jodoplay_layout_webviewpage.xml
+SHA1-Digest: Xqdl+ktY050WvCXZzT99itk6vo4=
+
+Name: assets/res/texture1.spk
+SHA1-Digest: C7S8B7+uM3YKhKUomdmVFZbUeEs=
+
+Name: res/drawable/jodoplay_buoyview_background.xml
+SHA1-Digest: yWvwBdwMXHJwQgbcDc8HTxQFOeA=
+
+Name: res/drawable-mdpi/com_facebook_button_blue_pressed.9.png
+SHA1-Digest: iRHUWY4kEaHVWx5cWxCf5cuFLrs=
+
+Name: res/anim/jodoplay_wmtoast_in.xml
+SHA1-Digest: 4uTskxK/ZCFDB9ZFnDWo9vS8zkM=
+
+Name: res/layout/com_facebook_picker_checkbox.xml
+SHA1-Digest: vSfHDSH+RZgsy90a2XjxcCJ8SKg=
+
+Name: res/drawable-xxhdpi/com_facebook_button_like_icon.png
+SHA1-Digest: AI7tb73iDACEMMCM+3r0f9sRhKk=
+
+Name: res/drawable-xxhdpi/jodoplay_down_arrow.png
+SHA1-Digest: 2lUu3CZB0Ju49ETWYEW0u1HDUk8=
+
+Name: res/drawable-hdpi/jodoplay_service_back_btn.png
+SHA1-Digest: DHv79yplkGyHaW0VKbzXVu3WKnk=
+
+Name: res/layout-land/main.xml
+SHA1-Digest: zY1i2bAh2Kg4OKZlilQBKGofR7s=
+
+Name: res/drawable-mdpi/jodoplay_icon_jpoint.png
+SHA1-Digest: Gqt3Ozmzhh1scRa84nAohk1Yaio=
+
+Name: res/drawable-xhdpi/com_facebook_close.png
+SHA1-Digest: i6NZ7gXqdUkl8/wUNcYSIGfBTUA=
+
+Name: res/drawable/jodoplay_service_solvedask_btn_bg.xml
+SHA1-Digest: 48evkSxRR3suuKb90hqwMX/QmO0=
+
+Name: res/layout-port/jodoplay_register_account_box.xml
+SHA1-Digest: 77+TZlLXlvcC/9lJx91ryGqVyPE=
+
+Name: res/layout/com_facebook_placepickerfragment.xml
+SHA1-Digest: h8sx26fv5IyZNg+/DkgD8GmR9yU=
+
+Name: assets/iapppay/lpay_arrow_up.png
+SHA1-Digest: /zWzy3Aury5ZP2QIlmR5rDoHSpU=
+
+Name: res/drawable/com_facebook_button_blue_normal.9.png
+SHA1-Digest: 8YR9ddJijK2gU4P7zTO2lBFhslc=
+
+Name: res/anim/jodoplay_slide_down_in.xml
+SHA1-Digest: fu+CXxch3R2ykZmgKeiSPz0WQTs=
+
+Name: res/menu/jodoplay_demo_activity_main.xml
+SHA1-Digest: e0jjfZ3fDoCTiDP2KmAH8T1DQyc=
+
+Name: res/drawable/jodoplay_unzip_background.png
+SHA1-Digest: 3veswCbuAQD6OVUffqi4Qf/VKNE=
+
+Name: assets/lk_config.properties
+SHA1-Digest: BGz8HAZVySzs8ECCkbS/wBPujjk=
+
+Name: res/drawable-hdpi/jodoplay_service_new_msg_tip_bg.png
+SHA1-Digest: 7Hbrmlz/XuLfdFxEfOcjiNyRUoU=
+
+Name: res/drawable-xhdpi/com_facebook_tooltip_black_background.9.png
+SHA1-Digest: K7vHxGTPFoRROPJcCDCgd663u3k=
+
+Name: res/drawable-hdpi/jodoplay_service_sender_pressed.9.png
+SHA1-Digest: y2WlTV6lBwuI3CrjwnU//sLf0AU=
+
+Name: lib/armeabi-v7a/libCrashHandler.so
+SHA1-Digest: mmUx5S7IAXjYU04F/+dC5mW68yI=
+
+Name: assets/res/map.spk
+SHA1-Digest: ngNgUV7jJKMDhGXW/vhyTNWDew4=
+
+Name: res/layout-port/jodoplay_pre_login_account_box.xml
+SHA1-Digest: DNfrTHvq3HsSosFT5r5P2ahYVsk=
+
+Name: res/drawable-mdpi/com_facebook_tooltip_blue_topnub.png
+SHA1-Digest: n0in7lM7jxyNTZNvPWHc507PbSA=
+
+Name: res/drawable/jodoplay_btn_next_step.xml
+SHA1-Digest: +Dm7jqAVwJDBvICEdYADpg5ppOY=
+
+Name: res/drawable-hdpi/com_facebook_button_grey_pressed.9.png
+SHA1-Digest: ooqNe625R0fOwuhKGZHVFUI2zns=
+
+Name: assets/oupeng_info_file
+SHA1-Digest: +g9IrZA+lOmA428XTZS4GePoks4=
+
+Name: res/layout/jodoplay_service_chatting_showimage.xml
+SHA1-Digest: lkq4iuvGuVFJrPO/Q875MpYqmLw=
+
+Name: assets/res/texture0.spk
+SHA1-Digest: 4PvgD7EtjyOZwWwFxQ5DLFeKmtk=
+
+Name: res/drawable-xhdpi/com_facebook_tooltip_black_topnub.png
+SHA1-Digest: Ms7bEBfNhBL3DdURQzevuRPEkZM=
+
+Name: res/drawable/jodoplay_auto_login_swtich_account_btn.xml
+SHA1-Digest: 1eO4dJnTQJFQtvHR5fPZx4HwavY=
+
+Name: res/layout/com_facebook_friendpickerfragment.xml
+SHA1-Digest: 90DsrPF6T8lilP8WC54/iq/yw4g=
+
+Name: res/drawable/jodoplay_oauth_line_bg_xml.xml
+SHA1-Digest: P4krFfsb+J19HrZ/vyBPyca+U34=
+
+Name: res/layout/jodoplay_service_ans_btns.xml
+SHA1-Digest: Hgxg9PlouQnGpXy2fenfrzBhbyY=
+
+Name: res/layout-land/jodoplay_autologin_layout.xml
+SHA1-Digest: NvQHCNgMj2PLahymxwpPLotsx/8=
+
+Name: res/drawable/jodoplay_service_submit_bg_unpress.xml
+SHA1-Digest: 4RelD2yHxet0NkhgWidVQjCruHg=
+
+Name: res/drawable-sw600dp-xhdpi/jodoplay_buoy_icon_livechat.png
+SHA1-Digest: tZFTFBVGEWQmwHnFKLgt/Os1lJk=
+
+Name: res/drawable-hdpi/com_facebook_button_like_background_selected.p
+ ng
+SHA1-Digest: FMehHURmy0FgUtppUSVboHpGECM=
+
+Name: res/drawable-xhdpi/com_facebook_button_grey_focused.9.png
+SHA1-Digest: IFQubIf70xOJ3EZ41rIRVkF1xLA=
+
+Name: res/drawable-hdpi/jodoplay_service_receiver_pressed.9.png
+SHA1-Digest: q5QP89VXR/YoF+6Cna+xruw52Dw=
+
+Name: res/drawable-xxhdpi/jodoplay_buoy_icon_gift.png
+SHA1-Digest: 0B+VZ76j19g6PC/nQEnPuh+Y1Mk=
+
+Name: res/drawable-xxhdpi/jodoplay_buoy_icon_webpay.png
+SHA1-Digest: 36JVFt832XIeFs8WdI3rTIxgd8w=
+
+Name: res/drawable-xxhdpi/jodoplay_buoy_icon_livechat.png
+SHA1-Digest: 8UVzvz7/2PSJC9uOWzBG41o5TYI=
+
+Name: res/drawable-hdpi/jodoplay_service_receiver_unpressed.9.png
+SHA1-Digest: 0cdILNRhysOWi6f9r9kAdq1Ntb8=
+
+Name: res/layout-land-1280x720/launcher.xml
+SHA1-Digest: FJxmAKStpyN0YBtcq1BWkxpGMi8=
+
+Name: res/drawable-xhdpi/com_facebook_picker_magnifier.png
+SHA1-Digest: QkUjQAfP4iJHSHZF/KmhUyACr6Q=
+
+Name: res/layout/com_facebook_picker_list_row.xml
+SHA1-Digest: u20nNzxzFzfE2/NNKUNLqTFF92Q=
+
+Name: res/drawable-hdpi/com_facebook_tooltip_black_xout.png
+SHA1-Digest: 4Tgk79eNjCIc+kN6q+nt/QxvBCU=
+
+Name: res/drawable-sw600dp-xhdpi/jodoplay_icon_fb_pressed.png
+SHA1-Digest: 0hzhhIN8hsTpuwEsotCC90Yycik=
+
+Name: res/drawable-hdpi/com_facebook_tooltip_black_bottomnub.png
+SHA1-Digest: PAl33vV5ibk0rUJAR7DcDQ7JG20=
+
+Name: res/drawable-hdpi/ic_launcher.png
+SHA1-Digest: VImBJ2wBlyYBBN6hv3haye7y1hM=
+
+Name: res/drawable/com_facebook_place_default_icon.png
+SHA1-Digest: kNkftbsEkvfgXxlw+p9xxjdCLRY=
+
+Name: res/layout-land-480x320/center.xml
+SHA1-Digest: luvw+69TwN5vxcuqZ0QyrrwemE8=
+
+Name: res/layout-land/jodoplay_login_account_box.xml
+SHA1-Digest: KfVwdJsLfL8uvIv4QSZiby3DMHg=
+
+Name: assets/res/effect.spk
+SHA1-Digest: xDrOmduK2jstTf+ITKWXFe7jVpw=
+
+Name: AndroidManifest.xml
+SHA1-Digest: c+N+KIGgIDoLK5HUaADTvH1/leQ=
+
+Name: res/layout-land/wait.xml
+SHA1-Digest: pQSTZ90BY/RGiqR9K/ZpT9vyL+U=
+
+Name: res/color/common_signin_btn_text_light.xml
+SHA1-Digest: Hy5cNcK3tMSOdVaDPEAv9VB0DTY=
+
+Name: res/layout/com_facebook_picker_search_box.xml
+SHA1-Digest: B6gnVW1WLqcAK1rVMmR2VksMyh8=
+
+Name: res/layout-land-1024x600/launcher.xml
+SHA1-Digest: 2qmllXnZy7RbcWw4FmIvAWIGdqA=
+
+Name: res/drawable-xxhdpi/jodoplay_buoy_icon_account.png
+SHA1-Digest: Yh1ufg81W7agq12aaoJUsZ5Q1s0=
+
+Name: res/layout/jodoplay_service_chat_item_entrytosubmit.xml
+SHA1-Digest: NDsueEuRkjujjHJunxGG7hUZ4Ws=
+
+Name: res/drawable/com_facebook_button_like_background_selected.png
+SHA1-Digest: oIDDi5XQSMzTWEXqTlCLiMzhTDc=
+
+Name: res/drawable/jodoplay_btn_default.xml
+SHA1-Digest: eM9hmAWvww3DSNcFArRmax6a+hg=
+
+Name: res/drawable-ldpi/com_facebook_close.png
+SHA1-Digest: VqDDuq9jQ/YfpMa2ZHwZXzHBcKM=
+
+Name: classes.dex
+SHA1-Digest: n9BtJL9b4OlRQJG8RjE6SmOVqVw=
+
+Name: res/drawable-mdpi/com_facebook_tooltip_black_bottomnub.png
+SHA1-Digest: qQ/RvBArgcC39owFv8a1eyriD/Y=
+
+Name: res/drawable-hdpi/jodoplay_jpoint_splash.jpg
+SHA1-Digest: uT7m07xi8BoIAojv7FlFrSZPpLk=
+
+Name: res/color/jodoplay_service_chatting_input_tips_bg.xml
+SHA1-Digest: XUAAzB+FwCYKb/ji7iWkFLWmZRg=
+
+Name: res/drawable-xhdpi/com_facebook_logo.png
+SHA1-Digest: dL+FfMlAMqc56eGKjEk2t8M39nY=
+
+Name: res/drawable-xhdpi/com_facebook_button_like_icon.png
+SHA1-Digest: fuhICHYomM15sq4DW4iBl+C9xj0=
+
+Name: res/drawable-hdpi/com_facebook_tooltip_black_topnub.png
+SHA1-Digest: m/eRQE/7h+sNp94UZMgSj/9mjQM=
+
+Name: res/drawable-hdpi/jodoplay_btn_back_to_game.png
+SHA1-Digest: 5NiP9g+sBI+xDt37mL6zqK7CXwk=
+
+Name: res/drawable-sw600dp-xhdpi/jodoplay_buoy_icon_bg_normal.png
+SHA1-Digest: otgedHkwAeHSWWHZPC+EAedqMTI=
+
+Name: res/layout/jodoplay_jpoint_splash.xml
+SHA1-Digest: I/eS6JZYEtYH/+DmkoExSVgVg6k=
+
+Name: res/drawable-xhdpi/ic_launcher.png
+SHA1-Digest: hcJxQZxft0iRDppQdD6UyggLY6c=
+
+Name: res/drawable/com_facebook_profile_picture_blank_square.png
+SHA1-Digest: g6nah0lzE14G6gVryaJxCe/Q5UA=
+
+Name: res/drawable-hdpi/jodoplay_service_sending_progress.png
+SHA1-Digest: CN37pzwmaL+ZkHY+k3Ex6+c/yaA=
+
+Name: assets/egame_ds.dat
+SHA1-Digest: SlvEgW+Ex0TK/6Y06r2FHMFq+OM=
+
+Name: res/drawable/jodoplay_forget_psw_btn.xml
+SHA1-Digest: bRHjefF4BGBB7oiFh0/Owg5WnTI=
+
+Name: res/drawable-mdpi/com_facebook_tooltip_black_topnub.png
+SHA1-Digest: CrAbOlp772mRv9VfJ4wtIM32DD4=
+
+Name: res/layout/jodoplay_main.xml
+SHA1-Digest: PpXGrN5FvD1AjEAhw6GM489pTCE=
+
+Name: res/drawable-hdpi/jodoplay_account_btn_normal.png
+SHA1-Digest: N3kLpHDcb1eple/UkGLECzMDeN4=
+
+Name: res/drawable-xhdpi/com_facebook_button_like_pressed.png
+SHA1-Digest: LZb7xsWm4zin3LQ7LQOqJIm8heE=
+
+Name: assets/lib.spk
+SHA1-Digest: BybLKUa8oS+TZIZ9Pyj+XFQr5RI=
+
+Name: res/layout-port/jodoplay_login_account_box.xml
+SHA1-Digest: jeFAhp/WidnPGUs3ghLDM498vRM=
+
+Name: res/drawable-xxhdpi/jodoplay_buoy_icon_sys_notice.png
+SHA1-Digest: v+2k0Eo0OuU5WsJAQf8PkcELxn8=
+
+Name: res/drawable/jodoplay_service_selection_bg_unpress.xml
+SHA1-Digest: 90ig3NLWB+B/csp0hJDwaXIhyUw=
+
+Name: res/layout/center.xml
+SHA1-Digest: h9LDJko3NrSBOX+xvofkBpiCYt8=
+
+Name: assets/upomp_bypay_config.xml
+SHA1-Digest: yZBH6i8ENFqmS+zM7bfaStHsK08=
+
+Name: assets/pay_secservice_build_info
+SHA1-Digest: d44C2AaYOgNiXx4zoCW1yEcMfgs=
+
+Name: res/drawable/com_facebook_button_check.xml
+SHA1-Digest: gWD8sdoBsNL/UQswsG/5X99I1bg=
+
+Name: res/layout-land-480x320/vedit.xml
+SHA1-Digest: ekE7XIs1SHIdQsKK0WplrAJ/c84=
+
+Name: res/drawable-xhdpi/com_facebook_button_blue_focused.9.png
+SHA1-Digest: Ab+o+1xgEHqVbtLGnT8dWLsAzsM=
+
+Name: res/drawable/com_facebook_picker_list_focused.9.png
+SHA1-Digest: jMhWzrnd1r+eVNaXijenjO2V+kw=
+
+Name: lib/mips/libCrashHandler.so
+SHA1-Digest: pKlSqaUcrbv9i2VzLjn3tRSPEC0=
+
+Name: res/drawable-hdpi/jodoplay_forget_btn_normal.png
+SHA1-Digest: gIEXv9e7OLxWIcrGT1KGwYrM1SI=
+
+Name: lib/mips/libcheck.so
+SHA1-Digest: wnDTcKi7UbpFgJztLB7yOZ+lRek=
+
+Name: res/layout-land/jodoplay_layout_pre_login.xml
+SHA1-Digest: Z92nNy7ZtnPYlsy5dtbxKa1pISk=
+
+Name: res/drawable-hdpi/jodoplay_banner_logo.png
+SHA1-Digest: n4Y0ck6m7O80gzrgbOyMP0xEQ0k=
+
+Name: assets/launcher.cfg
+SHA1-Digest: NHOfp5Ol+5NA9b/CiHrHzkurKSc=
+
+Name: res/layout-land-1280x720/wait.xml
+SHA1-Digest: LKdNWbIonj5b34cG+80/t4fC+Zw=
+
+Name: res/drawable-xxhdpi/jodoplay_buoy_logo.png
+SHA1-Digest: IByLta6XBnzp029d0tUVqM5zrE8=
+
+Name: assets/res/audio.spk
+SHA1-Digest: VKw8hOGe0VaFpWZsMx9JgjDLg+Q=
+
+Name: org/apache/http/version.properties
+SHA1-Digest: hBSc22j4GWdxfF1DSotSfDXmZUY=
+
+Name: res/drawable/com_facebook_picker_top_button.xml
+SHA1-Digest: +b3kRwbfd4RQAgPNsrGor4jymYw=
+
+Name: res/drawable/com_facebook_top_background.xml
+SHA1-Digest: +ZyYkg3cC+WmlHR9hyFqFc7t00w=
+
+Name: res/anim/jodoplay_wmtoast_out.xml
+SHA1-Digest: V051kiGTZ3m8tWeBWeqoqfXRw3k=
+
+Name: res/layout/jodoplay_service_fragment_chatting.xml
+SHA1-Digest: mFAv0ShV35iq1s9nHgBQaQRH/lc=
+
+Name: res/drawable-xxhdpi/jodoplay_buoy_icon_jpoint.png
+SHA1-Digest: 6a5Ky4WV3VJEXfW9HUTX+dZNhPo=
+
+Name: res/drawable/com_facebook_button_like_background.png
+SHA1-Digest: /RhLeVIUljwaSrZ2FLB8XejUBSk=
+
+Name: res/layout/jodoplay_service_fragment_common_problems.xml
+SHA1-Digest: 1ZYPGG/MWtZg/bdiwtFiXbFPQFk=
+
+Name: assets/feeInfo.dat
+SHA1-Digest: j8PALFJRxI/oBJWmJXue3900Dcs=
+
+Name: lib/x86/libcheck.so
+SHA1-Digest: ycNrQBbPeSuttnPdrN1IHEG7VN4=
+
+Name: res/layout-land/jodoplay_layout_register.xml
+SHA1-Digest: ayM4Y+yCXDapqYFKHt/K8m7Rjlk=
+
+Name: res/drawable-sw600dp-xhdpi/jodoplay_icon_fb_normal.png
+SHA1-Digest: AAfLCNWa4cjHFQSadS6UsvT+lEA=
+
+Name: res/drawable/jodoplay_btn_translate.xml
+SHA1-Digest: UcKb5bPlnAl+UTjjdg4fEjGXzjA=
+
+Name: res/drawable-xhdpi/com_facebook_button_blue_pressed.9.png
+SHA1-Digest: Rr6XOsb2fQYxpN5aF7U7lAZyn0g=
+
+Name: res/layout/jodoplay_gwallet_dialog_item.xml
+SHA1-Digest: y1x7tzoS0+gKoF59Emb79l93uhc=
+
+Name: res/drawable/com_facebook_profile_picture_blank_portrait.png
+SHA1-Digest: Kz+T2GSXw9HA76k5lrdgoM7eMUw=
+
+Name: res/drawable/jodoplay_buoy_scrollbar_thumb.xml
+SHA1-Digest: 6DXdoVRhFC8p2B9pkIpKsyxxTJc=
+
+Name: res/drawable/com_facebook_picker_list_selector.xml
+SHA1-Digest: WcGW7Gr+3QT9qOG7wKZj3hCraLA=
+
+Name: res/drawable/com_facebook_list_divider.9.png
+SHA1-Digest: 9f/hO3h6ybnDNcNYba5WnMwQZgQ=
+
+Name: res/drawable/jodoplay_service_submit_bg_press.xml
+SHA1-Digest: P07hJCLq/j+lvFh64QoGs9+g8s0=
+
+Name: res/drawable-xxhdpi/jodoplay_next_step_icon.png
+SHA1-Digest: mOOAEIGdUnqGkytI1B+LR/tg0bA=
+
+Name: res/drawable/com_facebook_close.png
+SHA1-Digest: E5KyzglZUCSjnpkAqKwGto1GtVE=
+
+Name: lib/armeabi-v7a/libmqsog.so
+SHA1-Digest: 2zo60si2EglW7qjHPwRoZMsq2h8=
+
+Name: res/drawable-hdpi/com_facebook_tooltip_black_background.9.png
+SHA1-Digest: cEYOElsARjErW7PLTcj1Jl2MWMg=
+
+Name: res/drawable/com_facebook_loginbutton_silver.xml
+SHA1-Digest: ZWTO2M+YQ/iopKCn9aRMBWj/ur8=
+
+Name: res/drawable/com_facebook_button_like_pressed.png
+SHA1-Digest: lyffB6ZlGgk+YR6DY+5gpCQ4yFU=
+
+Name: res/anim/jodoplay_slide_up_in.xml
+SHA1-Digest: hTIZge8GyVWci4o+50UtX56nf7c=
+
+Name: res/drawable-xxhdpi/jodoplay_buoy_icon_background.9.png
+SHA1-Digest: 62jRapo3J63AF9sgVn6L3Rm4Mh0=
+
+Name: res/drawable/com_facebook_button_grey_focused.9.png
+SHA1-Digest: MRwgTa4DuPsFULiD0iF08rHfKZo=
+
+Name: res/drawable/jodoplay_buoy_scrollbar_track.xml
+SHA1-Digest: df9N/y1JYXXjMoc0dElCPG5qVW8=
+
+Name: res/layout/com_facebook_picker_image.xml
+SHA1-Digest: bQrS503GQqox2VUdJfsALo8KFas=
+
+Name: res/drawable/jodoplay_service_solvedask_btn_pressed.xml
+SHA1-Digest: z/JHE+ab9scjshWeJ+JffQLWaN0=
+
+Name: res/drawable-hdpi/jodoplay_oauth_padding_bg_pressed.9.png
+SHA1-Digest: QC9TF5o5aP+CnCZ/dyoetkxP9b4=
+
+Name: res/drawable/com_facebook_profile_default_icon.png
+SHA1-Digest: 0/sJZhzxn+Q0n8GODDcAxjtOShI=
+
+Name: res/drawable/jodoplay_box_editor_shape3.xml
+SHA1-Digest: nuCAlD+oo1EcP3MbWGpE4Ob9uMA=
+
+Name: res/drawable-hdpi/jodoplay_service_system_reload.png
+SHA1-Digest: isVJjMWMPSp6Xh4ecGCZSp9hgvE=
+
+Name: res/drawable-mdpi/com_facebook_tooltip_blue_bottomnub.png
+SHA1-Digest: Dc3KOcEmwLmTSaJVSkKRx9rwJ80=
+
+Name: res/drawable/jodoplay_titlebar_back.xml
+SHA1-Digest: xHP1Vh84xuNFftK6saDYn0bDyCs=
+
+Name: res/layout/jodoplay_service_fragment_problem_submit.xml
+SHA1-Digest: RPdwDAkc3Quz8s/tw0vlTLPfon0=
+
+Name: res/layout/jodoplay_buoy_detail_window_container.xml
+SHA1-Digest: m6hFUZ3Ai9YpVO3qabweqdXpJwk=
+
+Name: res/drawable-xxhdpi/jodoplay_buoy_icon_bbs.png
+SHA1-Digest: yNjyJ5xnEMDciX0f+tnxPUSmaa0=
+
+Name: res/drawable/com_facebook_inverse_icon.png
+SHA1-Digest: qvtx4oVFLl+C+QOAFpfb33PvFUk=
+
+Name: res/color/jodoplay_service_selection_text.xml
+SHA1-Digest: /juQ/MeYQxDRDIUJpct80Ql1hcg=
+
+Name: res/layout/jodoplay_buoy_ctrl_window.xml
+SHA1-Digest: 3AzPhTlYUoZZ0h9/KtWRLMuvIYQ=
+
+Name: res/drawable/com_facebook_button_like_icon.png
+SHA1-Digest: JMsHnqoFEOR+ikanghEZ/7+VmBo=
+
+Name: assets/aibei.txt
+SHA1-Digest: jAHF1AnR3OEv/jljUVGEHk1sJhg=
+
+Name: assets/res/opcfg.spk
+SHA1-Digest: 3jAld0yC+Sbgx4RK3H6w994Lp7M=
+
+Name: res/layout-land-480x320/launcher.xml
+SHA1-Digest: 1iZsESEN0gOtZOWsv3mD/kjzzSI=
+
+Name: res/drawable-hdpi/jodoplay_unzip_landscape.jpg
+SHA1-Digest: YyeF7LnrjF9LTPG51P2nK+nVGAY=
+
+Name: res/drawable-hdpi/jodoplay_service_sender_head.png
+SHA1-Digest: ihLH8lsBoTWjCeCTY7XvFlC+NsU=
+
+Name: res/drawable-hdpi/jodoplay_service_system_fail.png
+SHA1-Digest: Mpw4+Ojv0ETKPPIM0YneaFbmZEw=
+
+Name: res/drawable-hdpi/jodoplay_btn_reselect_pay.png
+SHA1-Digest: Nl8iZQyle3Rz9b26t7Cwdm/DaMM=
+
+Name: res/drawable-hdpi/jodoplay_unzip_portrait.jpg
+SHA1-Digest: EICtV0UvE+NCsMeZUyGAlBkJJVg=
+
+Name: res/drawable/jodoplay_progress_bar.xml
+SHA1-Digest: NKfq3nkSmeZEMiGSfZqKVcpEJlg=
+
+Name: res/drawable-hdpi/ic_plusone_standard_off_client.png
+SHA1-Digest: NhC9xcXAAQrg4plGFPNJyT9d0Wk=
+
+Name: res/layout-land/launcher.xml
+SHA1-Digest: YnZEqdzyjKon6IIZBLa+x44NMj0=
+
+Name: res/layout/jodoplay_service_send_container.xml
+SHA1-Digest: Jrfh/QtvCp4Aeup3HCd6dEqVvFc=
+
+Name: res/layout-port/jodoplay_autologin_layout.xml
+SHA1-Digest: Pry8eUECvB93RLl3nN3WQ4XG7RI=
+
+Name: res/drawable/jodoplay_auto_login_shape.xml
+SHA1-Digest: wtCSDmuzqGLQ7fISBLEsxAWMqT8=
+
+Name: res/drawable-hdpi/com_facebook_tooltip_blue_topnub.png
+SHA1-Digest: fCB5ueJgt0glTu7kw5zpF25turQ=
+
+Name: res/layout-land-1024x600/main.xml
+SHA1-Digest: tsE0cFZAm2ZcP0ZqX+wz/S1nBhE=
+
+Name: res/drawable-xxhdpi/jodoplay_icon_fb_normal.png
+SHA1-Digest: ZhoaM8Kl6CXjyuDCGds5e4pou1Q=
+
+Name: res/drawable-hdpi/com_facebook_button_like_background.png
+SHA1-Digest: NJtK+6ju7vQB0+S/hqSOuG+0LDc=
+
+Name: res/layout-port/jodoplay_layout_pre_login.xml
+SHA1-Digest: KMZGtElcbahX6HtqevwABx/Qyj8=
+
+Name: lib/x86/libCrashHandler.so
+SHA1-Digest: ZdL0pahK02RgLHKh2/EgAOzcVNA=
+
+Name: res/color/common_signin_btn_text_dark.xml
+SHA1-Digest: zf0mRHwtSh9rUApbDo+Fp+GbTDc=
+
+Name: res/drawable/jodoplay_icon_fb.xml
+SHA1-Digest: NWiDxNLF+IR6zZN9tSlyqr4Ok1g=
+
+Name: res/layout-land-1280x720/vedit.xml
+SHA1-Digest: 8JjBbC5i4/q1JfcpaUF+TCtfSCI=
+
+Name: assets/version.ini
+SHA1-Digest: YukcwoNDZyN/sIsIDo9PNTop1Cg=
+
+Name: res/layout/com_facebook_picker_activity_circle_row.xml
+SHA1-Digest: ARO7Ck6+SZGzvQ0HYKQ1rsYa8Uw=
+
+Name: res/layout/com_facebook_login_activity_layout.xml
+SHA1-Digest: qOQ4D0qFThDG+mrRWhBtHTbjf44=
+
+Name: res/drawable-xhdpi/com_facebook_button_like_icon_selected.png
+SHA1-Digest: 0W+AViQ3P32M8ScEcrF9PRvv0Bg=
+
+Name: res/drawable/jodoplay_background_shape.xml
+SHA1-Digest: GtHUoKvET0JzEbCdcPUqEx/IYwc=
+
+Name: res/drawable-hdpi/jodoplay_psw_view.png
+SHA1-Digest: vXFc1QYoC6P7Fkc32uMsohP8jFo=
+
+Name: res/drawable-sw600dp-xhdpi/jodoplay_logo.png
+SHA1-Digest: Gvhn0Rwo8jEdzf3Pc+XnEe7tW9M=
+
+Name: res/drawable/jodoplay_box_editor_shape1.xml
+SHA1-Digest: 0SMpOQmJmGDV/dM92eVpRJ3a4CA=
+
+Name: res/drawable-xhdpi/com_facebook_tooltip_blue_xout.png
+SHA1-Digest: eUGXWwuC9VZ4mQtDTqVuBkbbsdA=
+
+Name: res/drawable-xxhdpi/jodoplay_loading.png
+SHA1-Digest: V6TpF5pFzmFn3pTn4zje8ppWgTI=
+
+Name: res/drawable-sw600dp-xhdpi/jodoplay_buoy_logo.png
+SHA1-Digest: xNONT3zvQ0JYyRf85RLz8h3rmXc=
+
+Name: res/layout-land-1024x600/center.xml
+SHA1-Digest: WTrzVva6TjM5z6WKMgsp1phpNBA=
+
+Name: res/drawable/jodoplay_service_chatting_tips_bg.xml
+SHA1-Digest: /X4uqE7nBxO9GeWcq774rEga8SM=
+
+Name: res/drawable-hdpi/jodoplay_service_receiver_head.png
+SHA1-Digest: 1dIFTyaispXRqn8IpCU/HZfdI2Q=
+
+Name: res/layout-land/center.xml
+SHA1-Digest: 4GZb8acJkbWEP4lJT/cNJWkOYv4=
+
+Name: res/layout-land-1024x600/wait.xml
+SHA1-Digest: 6mbUNA8z1TkrKc9u+jgmBqUZzIE=
+
+Name: assets/egame/EGAME_106.jar
+SHA1-Digest: OLeI2nAyHWYYvwNVS+miuY3/ly0=
+
+Name: res/layout/jodoplay_service_chat_item_problemsolved.xml
+SHA1-Digest: 8wpssme4ZKFO/h4n24I/Sh8aDLQ=
+
+Name: res/drawable-hdpi/jodoplay_service_send_img_btn.png
+SHA1-Digest: 6WPuwQRmeGfNRRJ5SWozBlwW4uw=
+
+Name: res/drawable-xhdpi/com_facebook_button_grey_normal.9.png
+SHA1-Digest: 0qYFXncRiF0miH/Ou43k9m0CKDw=
+
+Name: org/apache/http/entity/mime/version.properties
+SHA1-Digest: ZIk25PgIoQhsoTIDdXm0wxmCZ9s=
+
+Name: res/drawable-hdpi/jodoplay_titlebar_back_normal.png
+SHA1-Digest: 2cqyuPeIfzPg8YVKqzdWzu+MjP8=
+
+Name: res/drawable/com_facebook_button_check_off.png
+SHA1-Digest: LDESTEzl5fbwomh6NCO6jALZGuw=
+
+Name: res/drawable-xxhdpi/com_facebook_button_like_icon_selected.png
+SHA1-Digest: zfZvwRIYacOKIxm1L6GP5kCu34g=
+
+Name: res/drawable-xxhdpi/jodoplay_title_close_btn.xml
+SHA1-Digest: pGcwQXD3VbD9v26W8lgIrK7apAE=
+
+Name: res/drawable/jodoplay_service_submit_bg_disabled.xml
+SHA1-Digest: rURJJa0NCFfwuBFmN6zC6lQvWLQ=
+
+Name: res/layout/com_facebook_picker_list_section_header.xml
+SHA1-Digest: O/L/9w/+epYe2DoqCFDnfCCAskw=
+
+Name: res/drawable-hdpi/ic_plusone_medium_off_client.png
+SHA1-Digest: v5rLo21V7LjUi/+ipDU5fxaD+Y8=
+
+Name: res/drawable-hdpi/com_facebook_tooltip_blue_background.9.png
+SHA1-Digest: 3tDivsZHPFQ2uip/gLAJ5WgtUYs=
+
+Name: res/layout/jodoplay_float_portrait.xml
+SHA1-Digest: F4qz+p90c3smUIshPoiMfo1hHOY=
+
+Name: res/layout-port/jodoplay_layout_login.xml
+SHA1-Digest: EKirSmVKFLwjgGwALT7cY3mVLJo=
+
+Name: res/layout/jodoplay_regconfirm_accountbox.xml
+SHA1-Digest: vIhxaIx57BQflgWkaVbFNWgTxnU=
+
+Name: res/drawable-hdpi/com_facebook_picker_magnifier.png
+SHA1-Digest: SihtWKJtX9Co6SKR5ehNJN/WJSM=
+
+Name: res/color/wallet_secondary_text_holo_dark.xml
+SHA1-Digest: z19syw2+yUnht8an14XHXcjfo7U=
+
+Name: res/drawable-xhdpi/com_facebook_inverse_icon.png
+SHA1-Digest: Pq/lgQYSfhjodMZJHveYNee4LYs=
+
+Name: res/layout/com_facebook_picker_title_bar.xml
+SHA1-Digest: deNkllVuaGVnol4o/iEEZCVakcQ=
+
+Name: res/drawable/jodoplay_service_chatting_background.jpg
+SHA1-Digest: 9DcBXX1xEZppF0GuO1gpj6HCz/k=
+
+Name: res/drawable-xhdpi/com_facebook_button_like_background.png
+SHA1-Digest: NbhhnGZCUakEnMALW7DRTWjHSUg=
+
+Name: res/drawable-xhdpi/com_facebook_button_blue_normal.9.png
+SHA1-Digest: Zvm49XHqodxBr6sP8/3dyJFxY3U=
+
+Name: res/anim/jodoplay_slide_down_out.xml
+SHA1-Digest: Qalp8pKgYDG3Ob31leGd3re6IJg=
+
+Name: res/drawable-hdpi/ic_plusone_tall_off_client.png
+SHA1-Digest: u9m8DNPyctAszy/bxpNhW/anLw8=
+
+Name: res/drawable-hdpi/com_facebook_button_grey_normal.9.png
+SHA1-Digest: Zm95hGpI6uIxDgUr27/gSznIqpE=
+
+Name: res/drawable/jodoplay_textview_style.xml
+SHA1-Digest: qgDEUR3TuSRQxXNwmscz2qh/50I=
+
+Name: res/drawable-xhdpi/jodoplay_icon_jpoint.png
+SHA1-Digest: +YJ5GiL4c20qRH1JOTJdps5R09k=
+
+Name: res/layout-land-1280x720/vkeyboard.xml
+SHA1-Digest: PVdyJ+p3bUdD8mQX8kPeOTX9SEw=
+
+Name: res/layout-land-480x320/main.xml
+SHA1-Digest: QTJC4Vt3mFb7dm3OyXUOj09DuoQ=
+
+Name: res/layout-port/jodoplay_layout_register.xml
+SHA1-Digest: BKjYjn9dACvVxpTa0kE8eSp8zdU=
+
+Name: res/drawable/jodoplay_service_selection_bg.xml
+SHA1-Digest: 3b05UyGXsYuxVAqVM5MGmR8dyDY=
+
+Name: res/layout/jodoplay_payviewloading.xml
+SHA1-Digest: gp+4X5cyFyg72F55OOP6n/z85KU=
+
+Name: res/drawable/jodoplay_layout_pressed.xml
+SHA1-Digest: JZ/QJooEnwai8EzDOg8RHPhir+Y=
+
+Name: res/layout/com_facebook_tooltip_bubble.xml
+SHA1-Digest: 0GttnMFRkWcIRGczlgh2oXzO0Ws=
+
+Name: res/drawable-hdpi/jodoplay_account_btn_pressed.png
+SHA1-Digest: X8eWl5D8XUwDVe5Cza9uyqelas0=
+
+Name: res/layout/jodoplay_float_landscape.xml
+SHA1-Digest: KLI1PzALalMqlYovWD7QUsKWNfc=
+
+Name: res/layout-land-1280x720/main.xml
+SHA1-Digest: mGaoaTS4oh2dFtlG3GXenagYpuU=
+
+Name: res/drawable-sw600dp-xhdpi/jodoplay_buoy_icon_sys_notice.png
+SHA1-Digest: OqKiRMx7r4mTHxA276u4RT7W2Dg=
+
+Name: res/layout-land-1024x600/vedit.xml
+SHA1-Digest: bQCvtgK3EqMWAwYdNsTsL8tEnjc=
+
+Name: res/drawable-xxhdpi/jodoplay_buoy_icon_bg_normal.png
+SHA1-Digest: mW1+o+usGKOUqa5SQ78kq/bAIdw=
+
+Name: res/layout/wait.xml
+SHA1-Digest: EdaIZJr8nbV7iYDEnaYc6yYj4Ko=
+
+Name: res/layout/vkeyboard.xml
+SHA1-Digest: Z+SQin+2q/BimG9ui8CFMBtQrdU=
+
+Name: res/drawable/com_facebook_list_section_header_background.9.png
+SHA1-Digest: yO0MnPIqi9Nepe5GX5oPJJ56WX8=
+
+Name: res/drawable-hdpi/com_facebook_inverse_icon.png
+SHA1-Digest: TVAGw/arQ15hKNZRAijeq3HRskk=
+
+Name: res/drawable-hdpi/jodoplay_default_btn_pressed_bg.png
+SHA1-Digest: NC02mq6VFuvoGJh5abr4SS53fuI=
+
+Name: res/drawable-xxhdpi/com_facebook_button_like_pressed.png
+SHA1-Digest: mCyai6Yhpe2kqbXICS2xwNwD3VI=
+
+Name: res/drawable-mdpi/com_facebook_tooltip_black_xout.png
+SHA1-Digest: Tn0Iq4uyZGfrzuDHi0kNQjqD3ko=
+
+Name: res/drawable/com_facebook_picker_item_background.xml
+SHA1-Digest: LKylxM5fBQmQmpfNUodPSZdcw1Q=
+
+Name: res/layout/jodoplay_sharesdklocal_dm_status_bar_ongoing_event_pr
+ ogress_bar.xml
+SHA1-Digest: i7mR6i8aRufPKeJNeFNk3CmKFWs=
+
+Name: res/drawable-hdpi/jodoplay_service_chatitem_bg_sender.xml
+SHA1-Digest: q2BgoDgt3k1anEnWvDIwKXlIBf4=
+
+Name: assets/res/mesh.spk
+SHA1-Digest: T1335odQ8GedjHDy6umC9uzYh8c=
+
+Name: res/anim/jodoplay_payview_in.xml
+SHA1-Digest: qo0Zv86X27azL67+mFH1lgLK95w=
+
+Name: res/drawable/jodoplay_default_text_color.xml
+SHA1-Digest: iat6aU8NpeB3NaoP87cDw8NUQu8=
+
+Name: res/drawable-hdpi/com_facebook_button_like_icon_selected.png
+SHA1-Digest: A9Kq4ND10iO5k8R+py2HMubclwA=
+
+Name: res/drawable-mdpi/com_facebook_tooltip_blue_xout.png
+SHA1-Digest: fJRKyL5cxaiNRa49EJuiXsqadBY=
+
+Name: res/drawable-xxhdpi/jodoplay_title_close_btn_pressed.png
+SHA1-Digest: VmbTofKyN3nxRz4SAQyqgGxFHzA=
+
+Name: res/drawable-sw600dp-xhdpi/jodoplay_next_step_icon.png
+SHA1-Digest: D69E+z+fvNpSuHiV3p7WLrcJ00g=
+
+Name: res/drawable-xhdpi/com_facebook_tooltip_black_bottomnub.png
+SHA1-Digest: 0X4EOpYzusxA/Rd5LMGlQ2cghCk=
+
+Name: res/layout/jodoplay_download_landscape.xml
+SHA1-Digest: 21XTW4TUs/3bHN/K+PV2m3WREG8=
+
+Name: lib/armeabi/libCrashHandler.so
+SHA1-Digest: dbGaL9DZQY2U0ID3MtsFYMUqRAw=
+
+Name: res/drawable-hdpi/powered_by_google_dark.png
+SHA1-Digest: bUnEnOCASp1xefj7ITOXi8iwFJ4=
+
+Name: res/drawable/jodoplay_service_selection_bg_press.xml
+SHA1-Digest: hV7vGPcaxQasGNqcPFcaBL3ZXq4=
+
+Name: res/drawable/com_facebook_usersettingsfragment_background_gradie
+ nt.xml
+SHA1-Digest: PekUc0vsqGJnKEec+difAXy+Zt8=
+
+Name: res/drawable-sw600dp-xhdpi/jodoplay_buoy_icon_gift.png
+SHA1-Digest: Xy+dpNahfGmNCnFvst+u4NoqyLM=
+
+Name: lib/armeabi/libmqsog.so
+SHA1-Digest: 1GyFCX7JvV81vCE2M9ugfbIlSM4=
+
+Name: res/drawable/com_facebook_button_like_selected.xml
+SHA1-Digest: bu9l3zg8/t/E3HirPj6OECm0vGk=
+
+Name: res/drawable-sw600dp-xhdpi/jodoplay_buoy_icon_webpay.png
+SHA1-Digest: hf+fT5YOfyQ/emMOlHqw6QqRZJ4=
+
+Name: res/drawable-xxhdpi/com_facebook_button_like_background_selected
+ .png
+SHA1-Digest: ApHz+PjoBPHUn+1bvxv85pxxkwU=
+
+Name: res/layout/com_facebook_picker_title_bar_stub.xml
+SHA1-Digest: AHYAkP+Yq5/UVHqBYKzoNjQA/Es=
+
+Name: res/drawable-xhdpi/com_facebook_tooltip_blue_background.9.png
+SHA1-Digest: 8FgvEbzvRflG9O0B5PT1J1/olLg=
+
+Name: res/drawable-hdpi/com_facebook_button_like_pressed.png
+SHA1-Digest: Brg/CGh7Wm4WOQM884k3Xfq1elM=
+
+Name: res/drawable-hdpi/com_facebook_button_blue_focused.9.png
+SHA1-Digest: 0uPwEyH8dFsel2ZYZZWZ8dChcY4=
+
+Name: res/drawable-hdpi/jodoplay_oauth_padding_bg.9.png
+SHA1-Digest: fF/vNm+/Fo32ORyuDwjPBcrSkmQ=
+
+Name: resources.arsc
+SHA1-Digest: Tif7w5ULVsEHXpK1Cj/gL1EfJQ8=
+
+Name: res/drawable-sw600dp-xhdpi/jodoplay_buoy_icon_jpoint.png
+SHA1-Digest: p26jK9yDwLZtCgAERLsNxLMlrP4=
+
+Name: assets/egame/EGAME_106.dat
+SHA1-Digest: m3jTPGWsq7uTfT4ImRcoP+mZ81U=
+
+Name: res/drawable/com_facebook_button_grey_normal.9.png
+SHA1-Digest: iyxMtQ4YUrMXMiZLuZp2dOsp9nQ=
+
+Name: res/drawable-hdpi/jodoplay_service_sender_unpressed.9.png
+SHA1-Digest: CCXr5ng62MCoYOO42gmGFBDcdAo=
+
+Name: res/drawable-hdpi/jodoplay_btn_orange_focus.9.png
+SHA1-Digest: V5gLTd71RvS7BI1gh8WAH6Om1bM=
+
+Name: res/layout/jodoplay_agreement.xml
+SHA1-Digest: hXrZb1vv+UG77heN3fregXcN0K8=
+
+Name: res/drawable-mdpi/com_facebook_button_blue_normal.9.png
+SHA1-Digest: 98CFc4QzhtTnW9gNBHPz7TOCULE=
+
+Name: res/drawable/jodoplay_oauth_sub_ly_bg.xml
+SHA1-Digest: mvX17Difab6gGcBt2UErTz6h5/4=
+
+Name: assets/res/animation.spk
+SHA1-Digest: cUctv+Sh1nYAKs1MuSNRtBx2d/4=
+
+Name: assets/build_info_file
+SHA1-Digest: jaOJ5JCYzS/aUVZnZX1mqWRXvsY=
+
+Name: res/drawable/com_facebook_button_like_icon_selected.png
+SHA1-Digest: Ju0x/e03iqOpSe8B+MBnKpoRuA4=
+
+Name: res/drawable/com_facebook_top_button.xml
+SHA1-Digest: 50vy/qwu5miy4TBmzUEEZU2ScLE=
+
+Name: res/drawable-xxhdpi/jodoplay_icon_fb_pressed.png
+SHA1-Digest: lEiCkaNFBeT3LUoG/SE3ZSKsWlA=
+
+Name: res/drawable-mdpi/com_facebook_tooltip_blue_background.9.png
+SHA1-Digest: CN2EVxrU6BLeEcT4mMqqaLD5/QI=
+
+Name: res/drawable-xxhdpi/jodoplay_buoy_icon_help.png
+SHA1-Digest: 53Yk7GynYjD/217vW0NI+BObFbI=
+
+Name: res/drawable/com_facebook_button_blue_pressed.9.png
+SHA1-Digest: pNXERm0doH4UxsUeUZ3BCLIgYyw=
+
+Name: res/drawable-sw600dp-xhdpi/jodoplay_buoy_icon_help.png
+SHA1-Digest: cuYT3HtwqK3o+3jBfrcHSB+a6pA=
+
+Name: res/layout/jodoplay_base_title.xml
+SHA1-Digest: xTIqTHERqZB0YI+NScvj2aHFq8c=
+
+Name: res/layout-land/jodoplay_layout_quit.xml
+SHA1-Digest: x8lLhLOnMKaGpOtu0fN/kosXUCo=
+
+Name: res/drawable-xxhdpi/jodoplay_buoy_icon_bg_pressed.png
+SHA1-Digest: S+aAyhxyFZSef8mWaNgqEGGpyvA=
+
+Name: assets/egame/alipay_plugin223_0309.apk
+SHA1-Digest: bvV5RUTdHjlfVjs07JATZs5FijI=
+
+Name: res/drawable-xhdpi/com_facebook_button_like_background_selected.
+ png
+SHA1-Digest: WYq7ElXPUiekNtOaZ5Silp035zY=
+
+Name: lib/x86/libmqsog.so
+SHA1-Digest: eRNNrvAqjjPryKP1CaJnCdf+FHo=
+
+Name: res/drawable/com_facebook_picker_list_selector_disabled.9.png
+SHA1-Digest: 3Q5qOxYsC3rYK2fDQsI5bqW/4iw=
+
+Name: res/layout-land/jodoplay_layout_sys_notice.xml
+SHA1-Digest: mFpWxuMIlZXhVLlLjbx4hVi3ebo=
+
+Name: res/drawable-sw600dp-xhdpi/jodoplay_buoy_icon_background.9.png
+SHA1-Digest: npYBv1q9ebURcdNeot7ntZq73iM=
+
+Name: res/drawable/com_facebook_button_blue_focused.9.png
+SHA1-Digest: xQmdsffuOSWcegVAIQWMAhrXL20=
+
+Name: res/anim/jodoplay_payview_out.xml
+SHA1-Digest: c/GuA3N9ong/kg1luQk8eeezV2Q=
+
+Name: assets/res/push.spk
+SHA1-Digest: uKl9dEO5usJVskPAcGcgJGZbogw=
+
+Name: res/layout/jodoplay_download_portrait.xml
+SHA1-Digest: ZzSr1rJNS1v2EClLgmJ7B2pPt3g=
+
+Name: res/drawable-xxhdpi/jodoplay_icon_fb_disable.png
+SHA1-Digest: 3lm1CJ5laFkCU+0kQEiMAptjrCs=
+
+Name: res/anim/jodoplay_service_progress_rotate.xml
+SHA1-Digest: DHykwyaoVbPWDK2/rxaojnJhvR8=
+
+Name: assets/res/music.spk
+SHA1-Digest: B1u09ex2CJQHWpWVLwU5ibE7bWc=
+
+Name: res/layout/main.xml
+SHA1-Digest: WPM/IFqvZU/uhxbh9ncemLYa0uY=
+
+Name: res/drawable-mdpi/com_facebook_inverse_icon.png
+SHA1-Digest: 7Pvu+pb9QbkZp+Fcky0Z4MJ0X+s=
+
+Name: res/drawable/jodoplay_account_btn.xml
+SHA1-Digest: qB6TAtWHMmdLfaVxLzG9K9z7MYc=
+
+Name: res/drawable-hdpi/jodoplay_titlebar_back_pressed.png
+SHA1-Digest: Zeqc9yWb4TzB9XvJFjsFIFjK/BU=
+
+Name: res/drawable-sw600dp-xhdpi/jodoplay_buoy_icon_fb_fans.png
+SHA1-Digest: a68836oiz7NtBKvGt/rflswRqlg=
+
+Name: res/drawable/jodoplay_loading_bg.9.png
+SHA1-Digest: LWBfeD4xRl1gtQiw6y0mfABDAvA=
+
+Name: res/layout-land/vedit.xml
+SHA1-Digest: nYtvK6w69FIoodJb1ChjDSThntI=
+
+Name: res/layout/jodoplay_base.xml
+SHA1-Digest: 3ZB/E7+IS6x7YFO/1UjtBgnbxNE=
+
+Name: res/drawable-xhdpi/com_facebook_tooltip_blue_bottomnub.png
+SHA1-Digest: Tal625EEPeJaDhP8nYbi5hFfPeA=
+
+Name: res/drawable-mdpi/com_facebook_button_blue_focused.9.png
+SHA1-Digest: norISdHGseKr5HkPMjwk4vCV7/c=
+
+Name: res/layout-land/vkeyboard.xml
+SHA1-Digest: E2G2D0SUgrZZ72vha2xJrMRNRoM=
+
+Name: res/drawable-hdpi/com_facebook_button_like_icon.png
+SHA1-Digest: DKDSjHaHstm74uGb5Uu1N9fz7Mk=
+
+Name: lib/armeabi/libcheck.so
+SHA1-Digest: Co3puGdwMZ4NLQ/vHtky3k2GKSE=
+
+Name: res/drawable-mdpi/screen.jpg
+SHA1-Digest: Iortkzr68SGa8Tr/WesUywR4z8M=
+
+Name: res/layout/com_facebook_placepickerfragment_list_row.xml
+SHA1-Digest: xJcGpF6Q8YD3QAcgCO0o9N6Q1Mw=
+
+Name: res/drawable/jodoplay_oauth_text_color.xml
+SHA1-Digest: w7xh5TxtSoN/Cbd0Y7xDbeUmgak=
+
+Name: res/drawable/com_facebook_button_grey_pressed.9.png
+SHA1-Digest: sbH51pnE35p5k0fycNnpEydeWdM=
+
+Name: res/layout/vedit.xml
+SHA1-Digest: TCbwkpd0H1D7e+Ynd0wtDWbutn4=
+
+Name: res/drawable-hdpi/jodoplay_service_chatitem_bg_receiver.xml
+SHA1-Digest: KjPPBY4ewBiYJjIF61xbfK53kQA=
+
+Name: res/layout-land/jodoplay_register_account_box.xml
+SHA1-Digest: wzQEfbkRfGvobE262SE/9xrGyVw=
+
+Name: res/layout-land-480x320/wait.xml
+SHA1-Digest: So3uyR/1kyT8Tp36IRw/IhX+f7c=
+
+Name: res/drawable/jodoplay_box_editor_shape2.xml
+SHA1-Digest: 3ShwKea8sDjL7JOl6rBcCPhKppY=
+
+Name: res/drawable-hdpi/com_facebook_button_blue_normal.9.png
+SHA1-Digest: GEi/vF6z8HYhfymIaOqoh82rTr4=
+
+Name: assets/iapppay/lpay_arrow_down.png
+SHA1-Digest: WdouA2hqiYTMWfdJ9wlLVGdwSBs=
+
+Name: res/layout/jodoplay_service_activity_container.xml
+SHA1-Digest: MXU45EndNooEX5yq++RHxrSx/IU=
+
+Name: res/drawable-hdpi/jodoplay_autologin_bg.png
+SHA1-Digest: IXDNnu4Zkn5lGFd+wFNiWbLuFGk=
+
+Name: res/drawable/jodoplay_service_problem_submit_btn_bg.xml
+SHA1-Digest: KgxsnA7yXtVyLl//61dmHHBO1Eg=
+
+Name: res/layout-port/jodoplay_layout_quit.xml
+SHA1-Digest: PtEJXGJFgF7r5Fp7ynz1UP0lEB0=
+
+Name: res/layout-sw600dp/jodoplay_layout_register.xml
+SHA1-Digest: mDJiZ3hNtBBN22+qCBg3X+b6IAw=
+
+Name: res/drawable-xhdpi/com_facebook_tooltip_black_xout.png
+SHA1-Digest: 59PFUQ0aoq4om4o26BLcMLI1YtU=
+
+Name: res/drawable-hdpi/jodoplay_service_fragment_customer_service.png
+SHA1-Digest: iKKHNabRSGc1C1rjbRcCskWyL80=
+
+Name: res/layout-land-1280x720/center.xml
+SHA1-Digest: 2MB1cYR1OJh5guc4uEga8e99Sco=
+
+Name: res/layout-port/jodoplay_layout_sys_notice.xml
+SHA1-Digest: lzE1d2fJE7ldglYLLA2U9ELiJ6I=
+
+Name: res/drawable-mdpi/ic_launcher.png
+SHA1-Digest: ABXuX2jWVfLSGhJyWXXTwceZIds=
+
+Name: res/drawable-xxhdpi/jodoplay_title_close_btn_normal.png
+SHA1-Digest: yTo8vE22Yp+7jeT8sYqRuEIPiGg=
+
+Name: res/color/wallet_primary_text_holo_light.xml
+SHA1-Digest: KAi88TUZWhW0JfGoBFsmehfKQxQ=
+
+Name: res/drawable-xhdpi/com_facebook_tooltip_blue_topnub.png
+SHA1-Digest: MMF5wyau3yhZQf9kSJ/kdTGE9Zg=
+
+Name: res/layout/jodoplay_service_chat_item_imagemsg_sender.xml
+SHA1-Digest: KdPQ15NUIYINnhW5cueGburmh4c=
+
+Name: res/drawable-hdpi/com_facebook_close.png
+SHA1-Digest: HDYne3FVjNUhFYs1zVp7Tt9juyI=
+
+Name: res/drawable-hdpi/com_facebook_button_grey_focused.9.png
+SHA1-Digest: TwHJaVP/UWV0QVyYXpbs8ND4qyU=
+

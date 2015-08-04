@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/jodoplay_bottom_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:id="@id/jodoplay_v_line" android:background="@android:color/darker_gray" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="40.0dip" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="center" android:id="@id/jodoplay_btn_back_to_game" android:background="#ffe3e5e3" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_toLeftOf="@id/jodoplay_v_line">
+            <ImageView android:background="@drawable/jodoplay_btn_back_to_game" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+            <TextView android:textColor="#ff797979" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jodoplay_back_to_game" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/jodoplay_btn_reselect_pay" android:background="#ffe3e5e3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_toRightOf="@id/jodoplay_v_line">
+            <ImageView android:background="@drawable/jodoplay_btn_reselect_pay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+            <TextView android:textColor="#ff797979" android:id="@id/jodoplay_reselect_pay_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/jodoplay_webview_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/jodoplay_bottom_layout">
+        <WebView android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</RelativeLayout>

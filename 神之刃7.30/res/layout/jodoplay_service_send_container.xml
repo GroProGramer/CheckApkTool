@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/jodoplay_service_chatting_item_minheight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/jodoplay_service_chatting_head" android:layout_width="@dimen/jodoplay_service_chatting_head_size" android:layout_height="@dimen/jodoplay_service_chatting_head_size" android:layout_margin="@dimen/jodoplay_service_chatting_head_margin" android:src="@drawable/jodoplay_service_sender_head" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/jodoplay_service_chatting_head_margin" android:layout_marginBottom="@dimen/jodoplay_service_chatting_head_margin" android:layout_toLeftOf="@id/jodoplay_service_chatting_head" android:layout_alignParentLeft="true">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/jodoplay_service_msg_sender_sending" android:visibility="invisible" android:layout_width="@dimen/jodoplay_service_chatting_status_size" android:layout_height="@dimen/jodoplay_service_chatting_status_size" android:layout_margin="@dimen/jodoplay_service_chatting_head_margin" android:src="@drawable/jodoplay_service_sending_progress" />
+            <ImageView android:id="@id/jodoplay_service_msg_sender_failed" android:visibility="invisible" android:layout_width="@dimen/jodoplay_service_chatting_status_size" android:layout_height="@dimen/jodoplay_service_chatting_status_size" android:layout_margin="@dimen/jodoplay_service_chatting_head_margin" android:src="@drawable/jodoplay_service_system_fail" />
+        </FrameLayout>
+        <RelativeLayout android:gravity="center" android:id="@id/jodoplay_service_content" android:background="@drawable/jodoplay_service_chatitem_bg_sender" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

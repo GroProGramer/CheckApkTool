@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center|left" android:id="@id/jodoplay_service_chatting_msg" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/jodoplay_service_system_loding" android:scaleType="centerInside" android:maxWidth="@dimen/jodoplay_service_chatting_msg_size" android:maxHeight="@dimen/jodoplay_service_chatting_msg_size" android:minHeight="50.0dip" android:layout_centerInParent="true" />"
+<ProgressBar android:id="@id/jodoplay_service_chatting_progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

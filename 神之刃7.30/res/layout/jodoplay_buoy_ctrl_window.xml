@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/jodoplay_buoy_ctrl_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/jodoplay_buoy_logo_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:src="@drawable/jodoplay_buoyview_background" />
+        <ImageView android:id="@id/jodoplay_buoy_logo" android:layout_width="@dimen/jodoplay_buoy_icon_size" android:layout_height="@dimen/jodoplay_buoy_icon_size" android:src="@drawable/jodoplay_buoy_logo" android:scaleType="center" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

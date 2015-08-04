@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.jodo.paysdk.util.BorderHorizontalScrollView android:scrollbarSize="@dimen/jodoplay_buoy_container_scrollbar_size" android:scrollbarThumbHorizontal="@drawable/jodoplay_buoy_scrollbar_thumb" android:scrollbarTrackHorizontal="@drawable/jodoplay_buoy_scrollbar_track" android:scrollbarStyle="outsideOverlay" android:id="@id/jodoplay_buoy_detail_window_horiscrollview" android:paddingTop="@dimen/jodoplay_buoy_container_padding_vertical" android:paddingBottom="@dimen/jodoplay_buoy_container_padding_vertical" android:scrollbars="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fadeScrollbars="false" android:overScrollMode="never">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/jodoplay_buoy_detail_window_usercenter" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/jodoplay_buoy_detail_margin_horizontal" android:layout_marginRight="@dimen/jodoplay_buoy_detail_margin_horizontal">
+                <ImageView android:background="@drawable/jodoplay_buoy_icon_account" style="@style/jd_buoy_icon" />
+                <TextView android:text="@string/jodoplay_buoy_usercenter" style="@style/jd_buoy_icon_text" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/jodoplay_buoy_detail_window_giftcardcenter" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/jodoplay_buoy_detail_margin_horizontal" android:layout_marginRight="@dimen/jodoplay_buoy_detail_margin_horizontal">
+                <ImageView android:background="@drawable/jodoplay_buoy_icon_gift" style="@style/jd_buoy_icon" />
+                <TextView android:text="@string/jodoplay_buoy_giftcardcenter" style="@style/jd_buoy_icon_text" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/jodoplay_buoy_detail_window_webpay" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/jodoplay_buoy_detail_margin_horizontal" android:layout_marginRight="@dimen/jodoplay_buoy_detail_margin_horizontal">
+                <ImageView android:background="@drawable/jodoplay_buoy_icon_webpay" style="@style/jd_buoy_icon" />
+                <TextView android:text="@string/jodoplay_buoy_webpay" style="@style/jd_buoy_icon_text" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/jodoplay_buoy_detail_window_fb_fans" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/jodoplay_buoy_detail_margin_horizontal" android:layout_marginRight="@dimen/jodoplay_buoy_detail_margin_horizontal">
+                <ImageView android:background="@drawable/jodoplay_buoy_icon_fb_fans" style="@style/jd_buoy_icon" />
+                <TextView android:text="@string/jodoplay_buoy_fb_fans" style="@style/jd_buoy_icon_text" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/jodoplay_buoy_detail_window_jpoint" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/jodoplay_buoy_detail_margin_horizontal" android:layout_marginRight="@dimen/jodoplay_buoy_detail_margin_horizontal">
+                <ImageView android:background="@drawable/jodoplay_buoy_icon_jpoint" style="@style/jd_buoy_icon" />
+                <TextView android:text="@string/jodoplay_buoy_jpoint" style="@style/jd_buoy_icon_text" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/jodoplay_buoy_detail_window_sys_notice" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/jodoplay_buoy_detail_margin_horizontal" android:layout_marginRight="@dimen/jodoplay_buoy_detail_margin_horizontal">
+                <ImageView android:background="@drawable/jodoplay_buoy_icon_sys_notice" style="@style/jd_buoy_icon" />
+                <TextView android:text="@string/jodoplay_buoy_sys_notice" style="@style/jd_buoy_icon_text" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/jodoplay_buoy_detail_window_bbs" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/jodoplay_buoy_detail_margin_horizontal" android:layout_marginRight="@dimen/jodoplay_buoy_detail_margin_horizontal">
+                <ImageView android:background="@drawable/jodoplay_buoy_icon_bbs" style="@style/jd_buoy_icon" />
+                <TextView android:text="@string/jodoplay_buoy_bbs" style="@style/jd_buoy_icon_text" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/jodoplay_buoy_detail_window_helpcenter" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/jodoplay_buoy_detail_margin_horizontal" android:layout_marginRight="@dimen/jodoplay_buoy_detail_margin_horizontal">
+                <ImageView android:background="@drawable/jodoplay_buoy_icon_help" style="@style/jd_buoy_icon" />
+                <TextView android:text="@string/jodoplay_buoy_helpcenter" style="@style/jd_buoy_icon_text" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/jodoplay_buoy_detail_window_livechat" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/jodoplay_buoy_detail_margin_horizontal" android:layout_marginRight="@dimen/jodoplay_buoy_detail_margin_horizontal">
+                <ImageView android:background="@drawable/jodoplay_buoy_icon_livechat" style="@style/jd_buoy_icon" />
+                <TextView android:text="@string/jodoplay_buoy_livechat" style="@style/jd_buoy_icon_text" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.jodo.paysdk.util.BorderHorizontalScrollView>
+</RelativeLayout>

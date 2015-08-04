@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/jd_box_editor_ly"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/jd_box_row_ly">
+        <EditText android:id="@id/jodoplay_psw_box" android:background="@drawable/jodoplay_box_editor_shape3" android:text="@string/jodoplay_empty_text" android:hint="@string/jodoplay_login_psw_hint" android:inputType="text" style="@style/jd_box_register_editor_psw" />
+        <ImageView android:id="@id/jodoplay_psw_view_btn" android:visibility="gone" android:src="@drawable/jodoplay_psw_view" style="@style/jd_box_iamge_btn" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/jodoplay_reg_hint_textsize" android:textStyle="bold" android:textColor="#ffb2b5b5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/jodoplay_reg_hint_vertical_margin" android:layout_marginBottom="@dimen/jodoplay_reg_hint_vertical_margin" android:text="@string/jodoplay_one_step_to_finish" />
+    <Button android:id="@id/jodoplay_register_btn" android:layout_width="fill_parent" android:text="@string/jodoplay_register" style="@style/jd_reg_login_btn_port" />
+</LinearLayout>

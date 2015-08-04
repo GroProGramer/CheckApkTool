@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="end|center" android:layout_gravity="center_vertical" android:id="@id/jodoplay_to_next_page" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/jodoplay_base_layout_margin_right" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/jodoplay_base_layout_margin_right"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/jodoplay_reg_login_bottom_textsize" android:textStyle="bold" android:gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jodoplay_back_to_login" android:singleLine="true" />
+    <ImageView android:background="@drawable/jodoplay_next_step_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+</LinearLayout>

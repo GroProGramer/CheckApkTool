@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_centerInParent="true" style="@style/jd_base_container">
+        <include android:id="@id/jodoplay_title_quit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/jodoplay_base_layout_margin_left" android:layout_marginTop="@dimen/jodoplay_title_layout_margin_top" android:layout_marginRight="@dimen/jodoplay_base_layout_margin_right" android:layout_marginStart="@dimen/jodoplay_base_layout_margin_left" android:layout_marginEnd="@dimen/jodoplay_base_layout_margin_right" layout="@layout/jodoplay_base_title" />
+        <RelativeLayout android:layout_gravity="center" android:id="@id/jodoplay_quit_adv" android:layout_width="fill_parent" android:layout_height="@dimen/jodoplay_sysnotice_quit_adv_height" android:layout_margin="@dimen/jodoplay_sysnotice_quit_adv_margin" />
+        <Button android:textSize="@dimen/jodoplay_sysnotice_btn_textsize" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/jodoplay_quit_game" android:background="@drawable/jodoplay_auto_login_shape" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/jodoplay_sysnotice_quit_button_margin_all" android:layout_marginRight="@dimen/jodoplay_sysnotice_quit_button_margin_all" android:layout_marginBottom="@dimen/jodoplay_sysnotice_quit_button_margin_all" android:text="@string/jodoplay_quit_game" />
+    </LinearLayout>
+</RelativeLayout>

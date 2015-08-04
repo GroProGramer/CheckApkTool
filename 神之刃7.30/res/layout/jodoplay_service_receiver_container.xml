@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/jodoplay_service_chatting_item_minheight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/jodoplay_service_chatting_head" android:layout_width="@dimen/jodoplay_service_chatting_head_size" android:layout_height="@dimen/jodoplay_service_chatting_head_size" android:layout_margin="@dimen/jodoplay_service_chatting_head_margin" android:src="@drawable/jodoplay_service_receiver_head" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <RelativeLayout android:gravity="center" android:id="@id/jodoplay_service_content" android:background="@drawable/jodoplay_service_chatitem_bg_receiver" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/jodoplay_service_chatting_head_margin" android:layout_marginBottom="@dimen/jodoplay_service_chatting_head_margin" android:layout_toRightOf="@id/jodoplay_service_chatting_head" />
+</RelativeLayout>
