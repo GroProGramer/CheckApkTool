@@ -10,6 +10,7 @@ import java.util.zip.CRC32;
 import java.util.zip.CheckedInputStream;
 
 import jodoplay.checkToolManager.CheckToolManager;
+import jodoplay.util.Util;
 
 import org.apache.commons.codec.digest.DigestUtils;
 
@@ -26,9 +27,10 @@ public class CheckMD5AndCRC {
 	   
    } 
     
-   public static CheckMD5AndCRC getInstance(String targetRootFilePath,String standardRootFilePath){
-	   targetRootFile=new File(targetRootFilePath);
-	   standardRootFile=new File(standardRootFilePath);
+   public static CheckMD5AndCRC getInstance(){
+	   targetRootFile=new File(Util.getTargetApkDecompilePath());
+	   //standardRootFile=new File(standardRootFilePath);
+	   standardRootFile=new File(getStandardRootFilePath());
 	   if(cm==null){
 		   cm=new CheckMD5AndCRC();
 	   }
@@ -36,6 +38,10 @@ public class CheckMD5AndCRC {
 	   
    }
    
+   public static String getStandardRootFilePath(){
+	   return CheckToolManager.getInstance().getStanApkFile().getPath();
+	
+   }
    
    public  void checkAFile(MyFile targetFile,ArrayList<MyFile> targetTable){
 	   MyFile referFile=null;

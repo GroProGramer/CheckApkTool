@@ -1,0 +1,40 @@
+Manifest-Version: 1.0
+Built-By: 1.2.3
+Created-By: Android Gradle 1.2.3
+
+Name: res/drawable-land-hdpi-v4/jodopaydemo_main_bg.jpg
+SHA1-Digest: eCc6XbQAteb14ZZRacr8WQuj54s=
+
+Name: assets/jodoplay/jodoplay_core.apk
+SHA1-Digest: 7S38k6ozmUSY8yjUo66rNsa8zdc=
+
+Name: AndroidManifest.xml
+SHA1-Digest: iHC+w2DFo3q8LNKUukCNzG3S2vg=
+
+Name: res/drawable/ic_launcher.png
+SHA1-Digest: CSpVp2JQ5p3ai3KvX5SskYXdTZM=
+
+Name: res/drawable-port-hdpi-v4/jodopaydemo_main_bg.jpg
+SHA1-Digest: OJwOGNg8BS+6hCTAK0jfsrsaFD8=
+
+Name: res/menu/jodoplay_demo_activity_main.xml
+SHA1-Digest: zoFcMl39JhKpDj2LLouI3o+p4JY=
+
+Name: res/layout/jodoplay_demo_activity_main.xml
+SHA1-Digest: DnM0SsGNAbgkvCpUyCE2/VLQz84=
+
+Name: res/layout/jodoplay_demo_selectoractivity.xml
+SHA1-Digest: W5pTuE/4dk+BNWyXLjvMyAx3wok=
+
+Name: assets/jodoplay/debug
+SHA1-Digest: 2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+
+Name: resources.arsc
+SHA1-Digest: 8D5xiwEZW9Wul69q6MNxXPBL92I=
+
+Name: classes.dex
+SHA1-Digest: GV03bv8tW5TO06AdeHmOC1Hqe1s=
+
+Name: res/menu-v11/jodoplay_demo_activity_main.xml
+SHA1-Digest: pNtefmpTGidkWMDAlzHdV8tZGSI=
+

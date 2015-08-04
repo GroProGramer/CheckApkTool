@@ -31,9 +31,9 @@ public class CheckAndroidManiFest {
 	private CheckAndroidManiFest(){
 		
 	}
-	public  static CheckAndroidManiFest getInstance(String targetAndroidManiFestFilepath){
-		CheckAndroidManiFest.targetFilePath=targetAndroidManiFestFilepath;
-		System.out.println(targetAndroidManiFestFilepath);
+	public  static CheckAndroidManiFest getInstance(){
+		CheckAndroidManiFest.targetFilePath=Util.getTargetApkDecompilePath()+"AndroidManifest.xml";
+		//System.out.println(targetAndroidManiFestFilepath);
 		
 		//CheckAndroidManiFest.targetFilePath="app-debug0/AndroidManifest.xml";
 		CheckAndroidManiFest.version=version;
@@ -45,11 +45,12 @@ public class CheckAndroidManiFest {
 	}
 	public void CheckAndroidManiFest(){
 		//String standarFilePath="standard/"+version+"/AndroidManifest"+".xml";
-		String standarFilePath=GlobalValues.getStanManifestXmlPath();
+		//String standarFilePath=GlobalValues.getStanManifestXmlPath();
+		String standarFilePath=CheckToolManager.getInstance().getManiFestFile().getPath();
+		//System.out.println("standarFilePath="+standarFilePath);
 		beginSetNodes(targetNodes,targetFilePath);
 		beginSetNodes(standarNodes,standarFilePath);
-		compare(targetNodes,standarNodes,resultNodes);
-		//outPutLog("./AndroidManifest检验结果");	
+		compare(targetNodes,standarNodes,resultNodes);	
 		setCheckManiFestResult();
 	}
 	

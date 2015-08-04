@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="jodoplay_demo_main_layout">false</item>
+    <item type="id" name="jodoplay_demo_button2">false</item>
+    <item type="id" name="jodoplay_demo_button3">false</item>
+    <item type="id" name="jodoplay_demo_test_mode">false</item>
+    <item type="id" name="jodoplay_demo_zhengshi_mode">false</item>
+    <item type="id" name="jodoplay_demo_local_mode">false</item>
+    <item type="id" name="jodoplay_landscape">false</item>
+    <item type="id" name="jodoplay_portrait">false</item>
+    <item type="id" name="jodoplay_demo_menu_logout">false</item>
+</resources>

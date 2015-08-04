@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<libs>
+   <lib
+     name="android-async-http"
+	 checkKey="com/loopj/android/http"/>
+   <lib
+     name="android-support-v4"
+     checkKey="android/support" />
+   <lib
+	   name="AF-Android-SDK"
+	   checkKey="com/appsflyer"
+    />
+	<lib
+	   name="avoscloud-push"
+	   checkKey="com/avos"
+    />
+	<lib
+	   name="avoscloud-sdk"
+	   checkKey="com/avos/avoscloud"
+    />
+	<lib
+	   name="badgeview"
+	   checkKey="com/jauker/widget"
+    />
+	<lib
+	   name="bolts"
+	   checkKey="bolts"
+    />
+	<lib
+	   name="bolts"
+	   checkKey="com/bolts"
+    />
+	<lib
+	   name="chartboost"
+	   checkKey="com/chartboost.sdk"
+    />
+	<lib
+	   name="fastjson"
+	   checkKey="com/alibaba/fastjson"
+    />
+	<lib
+	   name="httpmime"
+	   checkKey="org/apache/http/entity/mime"
+    />
+	<lib
+	   name="Java-WebSocket-1.2.0-leancloud"
+	   checkKey="org/java_websocket"
+    />
+	
+	<lib
+	   name="universal-image-loader"
+	   checkKey="com/nostra13/universalimageloader"
+    />
+</libs>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

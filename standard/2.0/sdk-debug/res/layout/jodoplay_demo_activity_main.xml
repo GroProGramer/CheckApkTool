@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/jodoplay_demo_main_layout" android:background="@drawable/jodopaydemo_main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/jodoplay_demo_button2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="登录" />
+    <Button android:id="@id/jodoplay_demo_button3" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="购买 1000 金币" />
+    <Button android:id="@id/jodoplay_demo_test_mode" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="切换到测试环境" />
+    <Button android:id="@id/jodoplay_demo_zhengshi_mode" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="切换到正式环境" />
+    <Button android:id="@id/jodoplay_demo_local_mode" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="切换到本地环境" />
+</LinearLayout>
