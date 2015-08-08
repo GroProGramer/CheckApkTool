@@ -1,5 +1,7 @@
 package jodoplay.test;
 
+import java.io.IOException;
+
 import jodoplay.AndroidManiFest.CheckAndroidManiFest;
 import jodoplay.checkInterfaceCall.CheckInterface;
 import jodoplay.checkInterfaceCall.CheckPck;
@@ -21,6 +23,15 @@ public class Test {
 	 catch(RuntimeException e){
 		 CheckToolManager.getInstance().exceptionAppend(e+"\r\n"); 
 	 }*/
+	
+		/*try {
+			Runtime.getRuntime().exec("cmd.exe /k start java -jar apktool.jar d "+System.getProperty("user.dir")+"\\test\\神之刃7.30.apk "+System.getProperty("user.dir")+"\\test\\神之刃7.30");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("cmd.exe /k start java -jar apktool.jar d "+System.getProperty("user.dir")+"\\test\\神之刃7.30.apk "+System.getProperty("user.dir")+"\\test\\神之刃7.30");*/
+		System.out.println("decompiling apk...");
 		CheckToolManager.getInstance().init(args);
 		System.out.println("checking AndroidManiFest.xml...");
 		CheckAndroidManiFest.getInstance().CheckAndroidManiFest();
@@ -28,11 +39,11 @@ public class Test {
 		CheckInterface.getInstance().CheckInterface();
 		System.out.println("checking libs...");
 		CheckPck.getInstance().CheckPck();
-		System.out.println("checking CRC And MD5Code...");
-		CheckMD5AndCRC.getInstance().CheckCRCAndMD5Code();
+		//System.out.println("checking CRC And MD5Code...");
+		//CheckMD5AndCRC.getInstance().CheckCRCAndMD5Code();
 		System.out.println("outputing log...");
 		CheckToolManager.getInstance().outPutLog();
-		System.out.println("");
+		System.out.println("check apk over!");
 	}
 	
 	

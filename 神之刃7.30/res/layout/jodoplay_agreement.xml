@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout style="@style/jd_wr_agm"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView style="@style/jd_agm_tx1" />
-    <TextView android:textColor="#ffdedede" android:id="@id/jodoplay_agreemeng_textview" style="@style/jd_agm_tx2" />
-</LinearLayout>

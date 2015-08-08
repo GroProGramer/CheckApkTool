@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="end|center" android:layout_gravity="center_vertical"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/jodoplay_login_bottom_textsize" android:textStyle="bold" android:textColor="@color/jodoplay_f.w" android:gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jodoplay_nextstep_2_register" />
-    <ImageView android:background="@drawable/jodoplay_next_step_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginStart="10.0dip" />
-</LinearLayout>

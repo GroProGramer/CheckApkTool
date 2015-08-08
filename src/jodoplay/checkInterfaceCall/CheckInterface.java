@@ -17,7 +17,7 @@ import org.dom4j.Element;
 
 public class CheckInterface {
 
-	public static StringBuilder checkInterfaceResult=new StringBuilder();
+	//public static StringBuilder checkInterfaceResult=new StringBuilder();
 	//public static StringBuilder checkSupportV4Result=new StringBuilder();
 	private static CheckInterface CI;
 	public static String[] forceCallInterfaceTable={
@@ -67,11 +67,11 @@ public class CheckInterface {
 		showInterfaceCallTimes();
 	}
 	
-	public  void outPutLog(){
+	/*public  void outPutLog(){
 		showInterfaceCallTimes();
 		//setCpUseSupportV4Result();
 		Util.outPutLog("checkInterface", "checkInterface.txt", checkInterfaceResult.toString());
-	}
+	}*/
 	
 	
 	
@@ -87,6 +87,7 @@ public class CheckInterface {
             String tempString = null;
             while ((tempString = reader.readLine()) != null) {
                 if(tempString.contains("JodoPlaySDKManager")){
+                	//System.out.println(f.getAbsolutePath()+"\n"+tempString);
                 	useJodoInterface=true;
                 	String s=tempString.substring(tempString.indexOf("JodoPlaySDKManager"), tempString.lastIndexOf("("));
                 	String methodname=s.substring(s.indexOf(">")+1, s.length());

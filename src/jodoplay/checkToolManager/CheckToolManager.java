@@ -1,6 +1,7 @@
 package jodoplay.checkToolManager;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -17,7 +18,8 @@ public class CheckToolManager {
 	private  File maniFestFile;
 	private  File smaliFiles;
 	private  File stanApkFile;
-	private  StringBuilder checkInterfaceResult=new StringBuilder(); 
+	private  StringBuilder checkInterfaceResult=new StringBuilder();
+	private  StringBuilder checkLibsResult=new StringBuilder(); 
 	private  StringBuilder checkManiFestResult=new StringBuilder(); 
 	private  StringBuilder checkMd5AndCRCResult=new StringBuilder(); 
 	private  StringBuilder exceptions=new StringBuilder(); 
@@ -27,6 +29,9 @@ public class CheckToolManager {
 	private  String templateFiles="standard";
 	private  String logFiles="log";
 	private boolean maniFestHasInit=false;
+	private String apkname="apkNotExist";
+	private String pckname="pckNameNotExist";
+	
 	
 	public static CheckToolManager getInstance(){
 		if(ctm==null){
@@ -38,10 +43,75 @@ public class CheckToolManager {
 	public  void init(String args[]){
 		Util.decompileTargetApk();
 		initExeArgs(args);
+		decompileStanApk();
+		initApkName();
+		initPckName();
 		initConfig();
 		initStanManifest();	
 		initStanApkFile();
 		//System.out.println("maniFestFile="+maniFestFile.getAbsolutePath());
+	}
+	
+	public void decompileStanApk(){
+		try {
+			
+			Process pro=Runtime.getRuntime().exec("cmd.exe /c  apktool.bat d "+templateFiles+"/"+version+"/"+getStanApkName()
+					+" -o "+templateFiles+"/"+version+"/"+getStanApkName().substring(0, getStanApkName().lastIndexOf(".apk")));
+			pro.waitFor();
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			CheckToolManager.getInstance().exceptionAppend(e+"\r\n");
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			CheckToolManager.getInstance().exceptionAppend(e+"\r\n");
+			e.printStackTrace();
+		} 
+		//deleteStanAPK();
+	}
+	
+	public void  deleteStanAPK(){
+		File f=new File(templateFiles+"/"+version);
+		File[] childFiles=f.listFiles();
+		for(int i=0;i<childFiles.length;i++){
+			if(childFiles[i].getName().endsWith(".apk")&&childFiles[i].isFile()){
+				childFiles[i].delete();
+				break;
+			}
+		}
+	}
+	
+	public String getStanApkName(){
+		File f=new File("./"+templateFiles+"/"+version);
+		String apkName="";
+		File[] childFiles=f.listFiles();
+		for(int i=0;i<childFiles.length;i++){
+			if(childFiles[i].getName().endsWith(".apk")&&childFiles[i].isFile()){
+				apkName=childFiles[i].getName();
+				break;
+			}
+		}
+		return apkName;
+		
+	}
+	public void initApkName(){
+		apkname=Util.getApkName().substring(0, Util.getApkName().indexOf(".apk"));
+	}
+	
+	public void initPckName(){
+		File manifest=new File(Util.getTargetApkDecompilePath()+"/"+"AndroidManifest.xml");
+		SAXReader reader = new SAXReader();
+		Document document = null;
+		try {
+			document = reader.read(manifest);
+		} catch (DocumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			CheckToolManager.getInstance().exceptionAppend(e+"");
+		}
+		Element root = document.getRootElement();
+		pckname=root.attributeValue("package");
 	}
 	
 	public void initStanApkFile(){
@@ -73,6 +143,7 @@ public class CheckToolManager {
 	}
 	
 	public  void initConfig(){
+		
 		SAXReader reader = new SAXReader();
 		Document document = null;
 		try {
@@ -128,6 +199,10 @@ public class CheckToolManager {
 		checkInterfaceResult.append(s);
 	}
 	
+	public void checkLibsAppend(String s){
+		checkLibsResult.append(s);
+	}
+	
 	public void checkManiFestResultAppend(String s){
 		checkManiFestResult.append(s);
 	}
@@ -146,15 +221,15 @@ public class CheckToolManager {
 	}
 	
     public void outPutInterfaceAndLibsCheckLog(){
-    	Util.outPutLog(logFiles+"/checkInterface", "checkInterface.txt", checkInterfaceResult.toString());
+    	Util.outPutLog(logFiles+"/checkInterface", apkname+"_"+pckname+"_"+version+"_"+Util.getCurrentime()+".txt", checkInterfaceResult.toString());
 	}
 	
     public void outPutAndroidManiFestCheckLog(){
-    	Util.outPutLog(logFiles+"/AndroidManiFest", "AndroidManiFestCheck.txt", checkManiFestResult.toString());
+    	Util.outPutLog(logFiles+"/checkAndroidManiFest", apkname+"_"+pckname+"_"+version+"_"+Util.getCurrentime()+".txt", checkManiFestResult.toString());
 	}
     
     public void outPutMd5AndCRCCheckLog(){
-    	Util.outPutLog(logFiles+"/MD5与CRC码校验结果", "MD5与CRC码校验结果.txt", checkMd5AndCRCResult.toString());
+    	Util.outPutLog(logFiles+"/MD5与CRC码校验结果", apkname+"_"+pckname+"_"+version+"_"+Util.getCurrentime()+".txt", checkMd5AndCRCResult.toString());
 	}
     
     public void outPutException(){
@@ -162,9 +237,18 @@ public class CheckToolManager {
         	 Util.outPutLog(logFiles+"/程序运行异常", "程序异常分析.txt", exceptions.toString());
          }
     }
+    
+    public void outPutLibsLog(){
+    	Util.outPutLog(logFiles+"/checkLibs", apkname+"_"+pckname+"_"+version+"_"+Util.getCurrentime()+".txt", checkLibsResult.toString());
+    }
 	
+    
+    
 	public void outPutLog(){
-		File file =new File(logFiles);    
+		File file =new File("./"+logFiles);    
+		if(file.exists()){
+			Util.deleteDir(file);
+		}
 		//如果文件夹不存在则创建    
 		if(!file.exists()&&!file.isDirectory())      
 		{       
@@ -173,7 +257,8 @@ public class CheckToolManager {
 		} 
 		outPutInterfaceAndLibsCheckLog();
 		outPutAndroidManiFestCheckLog();
-		outPutMd5AndCRCCheckLog();
+		//outPutMd5AndCRCCheckLog();
+		outPutLibsLog();
 		outPutException();
 	}
 	public String getVersion() {
@@ -213,6 +298,13 @@ public class CheckToolManager {
 		for(File cf:fs){
 			circleSetStanManifest(cf);
 		}		
+	}
+	public String getPckname() {
+		return pckname;
+	}
+	
+	public String getApkname() {
+		return apkname;
 	}
 	
 	

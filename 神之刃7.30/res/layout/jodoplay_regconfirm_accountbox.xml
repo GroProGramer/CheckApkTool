@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout style="@style/jd_block"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <EditText android:id="@id/jodoplay_name_box" android:background="@drawable/jodoplay_box_editor_shape1" style="@style/jd_box_editor_name" />
-    <EditText android:id="@id/jodoplay_psw_box" android:background="@drawable/jodoplay_box_editor_shape2" android:layout_marginTop="-5.0dip" android:layout_below="@id/jodoplay_name_box" style="@style/jd_box_editor_psw" />
-</RelativeLayout>

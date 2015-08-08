@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <corners android:radius="@dimen/jodoplay_buoy_container_scrollbar_corner" />
-    <solid android:color="@color/jodoplay_buoy_scrollbar_track" />
-</shape>

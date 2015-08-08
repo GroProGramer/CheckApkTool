@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:id="@id/jodoplay_base_container" style="@style/jd_base_container"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/jodoplay_base_layout_margin_left" android:layout_marginTop="@dimen/jodoplay_base_mid_layout_margin_top" android:layout_marginRight="@dimen/jodoplay_base_layout_margin_right" android:layout_marginBottom="@dimen/jodoplay_base_mid_layout_margin_bottom" android:layout_marginStart="@dimen/jodoplay_base_layout_margin_left" android:layout_marginEnd="@dimen/jodoplay_base_layout_margin_right" layout="@layout/jodoplay_pre_login_account_box" />
-    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/jodoplay_base_layout_margin_left" android:layout_marginRight="@dimen/jodoplay_base_layout_margin_right" android:layout_marginBottom="@dimen/jodoplay_login_bottom_layout_margin_bottom" android:layout_marginStart="@dimen/jodoplay_base_layout_margin_left" android:layout_marginEnd="@dimen/jodoplay_base_layout_margin_right">
-        <include android:id="@id/jodoplay_otherlogin_prelogin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/jodoplay_login_bottom_inner_margin_hori" android:layout_marginStart="@dimen/jodoplay_login_bottom_inner_margin_hori" layout="@layout/jodoplay_otherlogin" />
-    </RelativeLayout>
-</LinearLayout>

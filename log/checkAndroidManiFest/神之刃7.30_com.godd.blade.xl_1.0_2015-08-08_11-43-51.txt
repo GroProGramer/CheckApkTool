@@ -1,0 +1,24 @@
+缺少以下结点
+
+结点名activity
+属性名label	属性值@string/app_name
+属性名name	属性值com.jodo.shares.MainLaunchActivity
+
+结点名activity
+属性名configChanges	属性值orientation|screenSize
+属性名label	属性值@string/app_name
+属性名name	属性值com.jodo.paysdk.demo.MainActivity
+属性名theme	属性值@android:style/Theme.Black.NoTitleBar
+
+结点名activity
+属性名label	属性值@string/app_name
+属性名name	属性值com.jodo.paysdk.demo.SelectorActivity
+属性名theme	属性值@android:style/Theme.Black.NoTitleBar
+
+结点名service
+属性名name	属性值com.sw.test.JodoHttpService
+
+结点名meta-data
+属性名name	属性值JODO_PAYSDK_TMODE
+属性名value	属性值false
+

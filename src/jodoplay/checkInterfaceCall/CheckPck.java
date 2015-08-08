@@ -25,15 +25,20 @@ public class CheckPck {
 	
 	public  void setCpUsePckResult(){
 		if(libs.size()==0){
-			CheckToolManager.getInstance().checkInterfaceResultAppend("CP沒有使用配置中要求检测的包\r\n");
+			CheckToolManager.getInstance().checkLibsAppend("CP沒有使用配置中要求检测的包\r\n");
 		}
 		for(String libname:libs){
-			CheckToolManager.getInstance().checkInterfaceResultAppend("CP使用了"+libname+"\r\n");
+			CheckToolManager.getInstance().checkLibsAppend("CP使用了"+libname+"\r\n");
 		}
 	}
 	
 	public  void setCheckPckResult(File f){
-		if(f.getAbsolutePath().contains("com\\jodo")||f.getAbsolutePath().contains("com\\facebook")||f.getAbsolutePath().contains("com\\air"))//
+		if(f.getAbsolutePath().contains("com\\jodo")||f.getAbsolutePath().contains("com\\facebook")||f.getAbsolutePath().contains("com\\air")
+		   ||f.getAbsolutePath().contains("com\\loopj\\android\\http")||f.getAbsolutePath().contains("android\\support")||
+		   f.getAbsolutePath().contains("com\\appsflyer")||f.getAbsolutePath().contains("com\\avos")||f.getAbsolutePath().contains("com\\avos\\avoscloud")
+		   ||f.getAbsolutePath().contains("com\\jauker\\widget")||f.getAbsolutePath().contains("bolts")||f.getAbsolutePath().contains("com\\chartboost\\sdk")
+		   ||f.getAbsolutePath().contains("com\\alibaba\\fastjson")||f.getAbsolutePath().contains("org\\apache\\http\\entity\\mime")||
+		   f.getAbsolutePath().contains("org\\java_websocket")||f.getAbsolutePath().contains("com\\nostra13\\universalimageloader"))//
 			return;
 		for(LibConfig lc:CheckToolManager.getInstance().getConfigs()){
 			if(f.getAbsolutePath().contains(lc.getSrc())) return;
@@ -47,7 +52,7 @@ public class CheckPck {
 	            		if(tempString.contains(lc.getCheckKey())) 
 	            			{
 	            			  addToLibs(lc.getLibname());
-	            			  System.out.println(f.getAbsolutePath()+"\n"+tempString);
+	            			  //System.out.println(f.getAbsolutePath()+"\n"+tempString);/**************************************/
 	            			}
 	            		
 	            	}

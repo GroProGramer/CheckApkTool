@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout style="@style/jd_box_editor_ly"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <Button android:id="@id/jodoplay_pre_login_try_btn" android:layout_marginTop="@dimen/jodoplay_base_mid_layout_margin_inner" android:text="@string/jodoplay_quick_trial" style="@style/jd_reg_login_btn_port" />
-    <Button android:id="@id/jodoplay_pre_login_login_btn" android:layout_marginTop="@dimen/jodoplay_base_mid_layout_margin_inner" android:text="@string/jodoplay_login" style="@style/jd_reg_login_btn_port" />
-</LinearLayout>

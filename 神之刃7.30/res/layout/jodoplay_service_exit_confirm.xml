@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@color/jodoplay_service_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textColor="@color/jodoplay_service_chatting_fontcolor" android:padding="@dimen/jodoplay_service_chatting_solvedask_text_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jodoplay_service_chatting_exitconfirm_text" />
-    <include layout="@layout/jodoplay_service_ans_btns" />
-</LinearLayout>

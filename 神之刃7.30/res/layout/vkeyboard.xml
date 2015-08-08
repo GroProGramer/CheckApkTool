@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TableLayout android:gravity="bottom" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:minHeight="200.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <view android:enabled="true" android:textColor="#ff010101" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/editText" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="320.0dip" android:text="7567687687978i" android:maxLength="320" android:editable="true" class="com.mqgame.lib.SFixEditor" />
-        <Button android:id="@id/button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_column="1" android:text="@string/str_commit" style="?android:attr/buttonStyleSmall" />
-    </TableRow>
-</TableLayout>

@@ -193,6 +193,8 @@ public class CheckAndroidManiFest {
 		Element root = document.getRootElement();
 		circleAddNode(nodes,root);
 	}
+	
+	
 	public  boolean shouldAdd(Element e){
 		boolean result=false;
 		String elementName=e.getName();

@@ -7,6 +7,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.StringWriter;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import jodoplay.checkToolManager.CheckToolManager;
 
@@ -137,6 +139,11 @@ public class Util {
                     return writer.toString(); 
             else return null; 
     }
+    
+    public static String getCurrentime(){
+    	SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");//设置日期格式
+    	return df.format(new Date());// new Date()为获取当前系统时间
+    }
 
     
     public static void outPutLog(String outPutFilePath,String filename,String fileContent){
@@ -163,6 +170,20 @@ public class Util {
 			CheckToolManager.getInstance().exceptionAppend("输出log到文件时出错，"+e+"\r\n");
 		}
 		
+    }
+    
+    public  static boolean deleteDir(File dir) {
+        if (dir.isDirectory()) {
+            String[] children = dir.list();
+            for (int i=0; i<children.length; i++) {
+                boolean success = deleteDir(new File(dir, children[i]));
+                if (!success) {
+                    return false;
+                }
+            }
+        }
+        // 目录此时为空，可以删除
+        return dir.delete();
     }
     
     

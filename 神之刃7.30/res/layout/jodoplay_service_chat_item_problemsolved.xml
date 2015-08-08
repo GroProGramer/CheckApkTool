@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/jodoplay_service_chatting_head_margin" android:layout_marginRight="@dimen/jodoplay_service_chatting_head_margin" android:minHeight="@dimen/jodoplay_service_chatting_item_minheight" android:layout_marginEnd="@dimen/jodoplay_service_chatting_head_margin"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/jodoplay_service_chatting_textsize" android:textColor="@color/jodoplay_service_black" android:padding="@dimen/jodoplay_service_chatting_solvedask_text_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/jodoplay_service_chatting_solvedask_text" />
-    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <include layout="@layout/jodoplay_service_ans_btns" />
-        <TextView android:textSize="@dimen/jodoplay_service_your_selection_text" android:textColor="@color/jodoplay_service_black" android:gravity="center" android:id="@id/jodoplay_service_solvedask_selection_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    </FrameLayout>
-</LinearLayout>

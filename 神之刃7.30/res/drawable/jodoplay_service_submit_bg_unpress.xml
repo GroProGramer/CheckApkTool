@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape android:shape="rectangle"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@color/jodoplay_service_bgcolor" />
-    <corners android:radius="@dimen/jodoplay_service_submit_btn_bg_radius" />
-    <padding android:left="@dimen/jodoplay_service_submit_btn_padding_hori" android:top="@dimen/jodoplay_service_submit_btn_padding_vert" android:right="@dimen/jodoplay_service_submit_btn_padding_hori" android:bottom="@dimen/jodoplay_service_submit_btn_padding_vert" />
-</shape>
